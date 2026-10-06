@@ -365,7 +365,7 @@ function initPwa() {
 // =============================================================================
 async function loadDatabase() {
   try {
-    const res = await fetch('/data/data_cache.json');
+    const res = await fetch('data/data_cache.json');
     if (!res.ok) {
       throw new Error(`Erreur réseau HTTP ${res.status}`);
     }
