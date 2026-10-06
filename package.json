@@ -1,0 +1,10 @@
+{
+  "name": "livre-nini-magie",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Livre nini magie - Encyclopédie et consultation magique",
+  "scripts": {
+    "build": "node scripts/prepare_netlify.js",
+    "deploy": "gh-pages -d dist --dotfiles --nojekyll"
+  }
+}
