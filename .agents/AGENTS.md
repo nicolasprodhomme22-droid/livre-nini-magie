@@ -49,17 +49,17 @@ L'agent reconnaît et exécute automatiquement les workflows métier ci-dessous,
 - **Mode** : Synchronisation et rafraîchissement express de l'application web locale et distante (`python scripts/pipeline_orchestrator.py --maj-app`).
 - **Chaînage** :
   1. Exécuter **Skill 4 (`magic-db-sync`)** pour consolider le cache de données.
-  2. Exécuter **Skill 5 (`magic-app-guardian`)** pour contrôler l'intégrité de l'interface et déployer sur Netlify.
-- **Retour** : Nombre total de techniques consolidées (chiffre dynamique depuis le cache) et statut du site en direct sur `https://encyclopedie-magique.netlify.app`.
+  2. Exécuter **Skill 5 (`magic-app-guardian`)** pour contrôler l'intégrité de l'interface et déployer sur GitHub Pages.
+- **Retour** : Nombre total de techniques consolidées (chiffre dynamique depuis le cache) et statut du site en direct sur `https://nicolasprodhomme22-droid.github.io/livre-nini-magie/`.
 
 ### 🚀 Raccourci 6 : « Déploie l'application » ou `/deploy`
-- **Mode** : Déploiement et audit qualité 1-clic sur Netlify (`python scripts/pipeline_orchestrator.py --deploy`).
+- **Mode** : Déploiement et audit qualité 1-clic sur GitHub Pages (`python scripts/pipeline_orchestrator.py --deploy`).
 - **Chaînage** :
   1. Exécuter `python .agents/skills/magic-app-guardian/scripts/verify_app.py` (Zéro erreur DOM, concordance des boutons).
   2. Exécuter `node scripts/prepare_netlify.js` (Compilation du dossier `dist/`).
-  3. Exécuter `npx netlify deploy --dir dist --no-build --site encyclopedie-magique --prod`.
+  3. Exécuter `python .agents/skills/magic-app-guardian/scripts/deploy_github.py` (Déploiement sur la branche `gh-pages`).
   4. Tester la réponse en ligne du site.
-- **Retour** : Rapport qualité 100% vert et lien de production Netlify direct.
+- **Retour** : Rapport qualité 100% vert et lien de production GitHub Pages direct (`https://nicolasprodhomme22-droid.github.io/livre-nini-magie/`).
 
 
 ## 3. Règle Fondamentale d'Inviolabilité des Données (Zéro Écrasement)
