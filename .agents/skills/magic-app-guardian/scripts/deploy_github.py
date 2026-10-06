@@ -39,7 +39,7 @@ def deploy():
         return False
 
     # 3. Déploiement vers GitHub Pages via gh-pages
-    ok, out = run_command('npx gh-pages -d dist -m "Deploy: Livre nini magie [automated]"', "3. Déploiement sur la branche GitHub Pages")
+    ok, out = run_command('npx gh-pages -d dist -t -m "Deploy: Livre nini magie [automated]"', "3. Déploiement sur la branche GitHub Pages")
     if not ok:
         print("💡 Astuce : Assurez-vous d'avoir configuré le remote Git (git remote add origin ...).")
         return False
