@@ -1,0 +1,16 @@
+# Environnements & Dépendances
+node_modules/
+__pycache__/
+*.pyc
+
+# Fichiers temporaires
+*.tmp
+*.log
+.netlify/
+scratch/
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

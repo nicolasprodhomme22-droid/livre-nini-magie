@@ -1,0 +1,20 @@
+{
+  "name": "appli-magie-vf",
+  "version": "1.0.0",
+  "description": "Application unique de consultation pour Techniques Cartes, Techniques Pièces et Tours de Cartes",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "magie",
+    "cartomagie",
+    "numismagie",
+    "tours"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  }
+}

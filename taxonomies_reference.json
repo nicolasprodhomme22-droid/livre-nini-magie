@@ -1,0 +1,1624 @@
+{
+  "livre_cartes_techniques": {
+    "nom": "Techniques de Cartes",
+    "fichier_word": "SOMMAIRE TECHNIQUES DE CARTES.docx",
+    "fichier_excel": "Livre Techniques Cartes.xlsx",
+    "prefixe_id": "TECH_CARTE",
+    "dossier_sources": "Sources/sources_lisibles/sources techniques Cartes",
+    "structure": [
+      {
+        "titre": "PARTIE 1 : TECHNIQUES DE MAGIE",
+        "definition": "Ensemble des manipulations cartomagiques fondamentales exécutées en mains ou sur table, reposant sur la dextérité manuelle, l'angle de vue et le détournement d'attention pour divertir le public.",
+        "mots_cles": [
+          "sleight of hand",
+          "card magic",
+          "cartomagie",
+          "manipulation de cartes"
+        ],
+        "chapitres": [
+          {
+            "titre": "Chapitre 1 : Les Fondamentaux",
+            "definition": "Prises en main canoniques du jeu (tenue de distribution, prise Biddle par le dessus, tenue sur tranche) et gestion des micro-biseaux servant de posture de repos et de départ à toute manipulation.",
+            "mots_cles": [
+              "mechanic's grip",
+              "biddle grip",
+              "straddle grip",
+              "dealing grip",
+              "tenue du jeu",
+              "posture des doigts",
+              "bevel",
+              "biseau naturel"
+            ],
+            "sections": []
+          },
+          {
+            "titre": "Chapitre 2 : Les Contrôles",
+            "definition": "Manœuvres secrètes destinées à diriger ou conserver une ou plusieurs cartes sélectionnées à un emplacement précis du jeu (sommet, dessous ou position chiffrée) après leur insertion apparente au centre.",
+            "mots_cles": [
+              "card control",
+              "contrôle",
+              "contrôle de carte"
+            ],
+            "sections": [
+              {
+                "titre": "Section 1 : Saut de coupe",
+                "definition": "Transposition secrète, instantanée et invisible des deux moitiés du paquet tenue en mains, neutralisant une coupe ou ramenant immédiatement la carte du spectateur sur le dessus ou le dessous sans mouvement apparent.",
+                "mots_cles": [
+                  "pass",
+                  "classic pass",
+                  "herrmann pass",
+                  "turnover pass",
+                  "spread pass",
+                  "invisible pass",
+                  "shift",
+                  "s.w.e. shift",
+                  "saut de coupe"
+                ]
+              },
+              {
+                "titre": "Section 2 : Autres contrôles",
+                "definition": "Méthodes de contrôle silencieuses basées sur le maintien d'une brisure discrète (break), le dépassement millimétrique d'une carte vers l'intérieur ou l'extérieur (injog, outjog), le glissement latéral d'une seule carte (side slip) ou l'illusion de profondeur (tilt).",
+                "mots_cles": [
+                  "break",
+                  "pinky break",
+                  "injog",
+                  "outjog",
+                  "side slip",
+                  "tilt",
+                  "depth illusion",
+                  "diagonal insertion"
+                ]
+              }
+            ]
+          },
+          {
+            "titre": "Chapitre 3 : Faux Mélange et Fausse Coupe",
+            "definition": "Procédés imitant fidèlement l'action de battre ou couper les cartes tout en préservant l'ordre total ou la position de cartes stratégiques à l'insu du public.",
+            "mots_cles": [
+              "false shuffle",
+              "false cut",
+              "faux mélange",
+              "fausse coupe"
+            ],
+            "sections": [
+              {
+                "titre": "Section 1 : Faux mélange total",
+                "definition": "Simulation intégrale d'un mélange (à la française, riffle américain ou en ruban) laissant les 52 cartes rigoureusement dans leur arrangement initial.",
+                "mots_cles": [
+                  "false shuffle",
+                  "zarrow shuffle",
+                  "push through",
+                  "triumph shuffle",
+                  "optica shuffle",
+                  "full false shuffle",
+                  "faux mélange total"
+                ]
+              },
+              {
+                "titre": "Section 2 : Faux mélange partiel",
+                "definition": "Mélange apparent qui brasse réellement une partie du jeu mais conserve intact un montage (stock) situé sur le dessus ou le dessous.",
+                "mots_cles": [
+                  "partial false shuffle",
+                  "stock shuffle",
+                  "retaining top stock",
+                  "retaining bottom stock",
+                  "overhand false shuffle",
+                  "faux mélange partiel"
+                ]
+              },
+              {
+                "titre": "Section 3 : Fausse coupe totale",
+                "definition": "Série de coupes apparentes (à deux ou trois paquets, sur table ou en fioriture à une main) rétablissant l'ordre complet initial du jeu.",
+                "mots_cles": [
+                  "false cut",
+                  "charlier cut",
+                  "running cut",
+                  "triple false cut",
+                  "blind cut",
+                  "fausse coupe totale"
+                ]
+              },
+              {
+                "titre": "Section 4 : Fausse coupe partielle",
+                "definition": "Déplacement simulé ou glissé conservant une portion critique ou une carte clef au sommet sans perturber le reste.",
+                "mots_cles": [
+                  "partial cut",
+                  "brief cut",
+                  "slip cut",
+                  "fausse coupe partielle"
+                ]
+              }
+            ]
+          },
+          {
+            "titre": "Chapitre 4 : Les Forçages",
+            "definition": "Procédés physiques, mécaniques ou psychologiques contraignant infailliblement le spectateur à choisir une carte préalablement déterminée, tout en lui procurant la sensation absolue d'une liberté totale.",
+            "mots_cles": [
+              "force",
+              "classic force",
+              "riffle force",
+              "cross-cut force",
+              "countdown force",
+              "slip force",
+              "hindu force",
+              "dribble force",
+              "forçage classique"
+            ],
+            "sections": []
+          },
+          {
+            "titre": "Chapitre 5 : Empalmages et Dissimulations",
+            "definition": "Soustraction secrète d'une ou plusieurs cartes hors du jeu pour les tenir dissimulées dans le creux de la paume (sans contraction musculaire visible) afin de les faire réapparaître ultérieurement.",
+            "mots_cles": [
+              "palm",
+              "card palm",
+              "top palm",
+              "erdnase palm",
+              "bottom palm",
+              "diagonal palm shift",
+              "gambler's cop",
+              "tenkai palm",
+              "back palm",
+              "empalmage"
+            ],
+            "sections": []
+          },
+          {
+            "titre": "Chapitre 6 : Changes et Faux Comptages",
+            "definition": "Substitution secrète et instantanée d'une carte par une autre (levée double, top change) ou décomptes trompeurs masquant certaines cartes ou en faisant compter plus qu'il n'en existe.",
+            "mots_cles": [
+              "double lift",
+              "levée double",
+              "top change",
+              "bottom change",
+              "glide",
+              "elmsley count",
+              "jordan count",
+              "hamman count",
+              "push-off",
+              "buckle"
+            ],
+            "sections": []
+          },
+          {
+            "titre": "Chapitre 7 : Fioritures et Esthétique",
+            "definition": "Mouvements graphiques et acrobatiques d'embellissement (étalements en ruban, éventails parfaits, cascades, ressorts, coupes aériennes à une main) mettant en valeur la virtuosité et l'élégance du manipulateur.",
+            "mots_cles": [
+              "flourish",
+              "cardistry",
+              "fan",
+              "giant fan",
+              "ribbon spread",
+              "spring",
+              "dribble",
+              "waterfall",
+              "cascade",
+              "pirouette",
+              "fioriture"
+            ],
+            "sections": []
+          }
+        ]
+      },
+      {
+        "titre": "PARTIE 2 : TECHNIQUES DU TRICHEUR",
+        "definition": "Mouvements secrets forgés dans l'univers du jeu d'argent clandestin (poker, blackjack), conçus avec une économie de mouvement absolue pour résister à la surveillance rapprochée des joueurs assis à la même table.",
+        "mots_cles": [
+          "card sharping",
+          "gambling sleights",
+          "triche",
+          "card mechanic",
+          "poker sleights"
+        ],
+        "chapitres": [
+          {
+            "titre": "Chapitre 1 : Faux Mélanges et Fausses Coupes",
+            "definition": "Mélanges à l'américaine sur tapis (riffle shuffle avec tirage secret ou imbrication feinte) reproduisant scrupuleusement les gestes réglementaires des croupiers de casino tout en maintenant le montage intact.",
+            "mots_cles": [
+              "table false shuffle",
+              "strip-out shuffle",
+              "pull-through shuffle",
+              "riffle shuffle work",
+              "table false cut",
+              "mélange de casino"
+            ],
+            "sections": []
+          },
+          {
+            "titre": "Chapitre 2 : Les Donnes Frauduleuses",
+            "definition": "Manœuvres de distribution où la main donneuse distribue discrètement une autre carte que celle du sommet (la 2e du dessus, la carte sous le jeu ou celle du milieu) avec un rythme et un son strictement identiques à une donne normale.",
+            "mots_cles": [
+              "false deal",
+              "second deal",
+              "bottom deal",
+              "center deal",
+              "greek deal",
+              "donne en second",
+              "donne du dessous",
+              "donne du milieu"
+            ],
+            "sections": []
+          },
+          {
+            "titre": "Chapitre 3 : Montages et Classements",
+            "definition": "Tri et ordonnancement secrets des cartes avantageuses (ex: les 4 As ou une quinte flush) pendant le brassage normal des cartes ou lors d'un étalement sous prétexte d'examen.",
+            "mots_cles": [
+              "cull",
+              "culling",
+              "hofzinser cull",
+              "spread cull",
+              "stack",
+              "stacking",
+              "riffle stack",
+              "overhand stack",
+              "montage de poker"
+            ],
+            "sections": []
+          },
+          {
+            "titre": "Chapitre 4 : Sauts de Coupe et Annulations",
+            "definition": "Mouvements de tricheur à plat sur la table neutralisant instantanément la coupe légale faite par un adversaire pour rétablir l'ordre arrangé avant la distribution.",
+            "mots_cles": [
+              "the hop",
+              "hop",
+              "table shift",
+              "table pass",
+              "annulation de coupe sur table"
+            ],
+            "sections": []
+          },
+          {
+            "titre": "Chapitre 5 : Empalmages à la Table",
+            "definition": "Soustraction furtive de cartes posées à plat sur le tapis vert, ou substitution de cartes en réserve via les mains, les genoux ou les manches (mucking) pour améliorer une main de poker.",
+            "mots_cles": [
+              "table palm",
+              "gambler's cop",
+              "muck",
+              "mucking",
+              "card mucking",
+              "holdout",
+              "empalmage à la table"
+            ],
+            "sections": []
+          },
+          {
+            "titre": "Chapitre 6 : Repérages et Marques Tactiles",
+            "definition": "Altérations physiques imperceptibles infligées aux cartes pendant la partie (pliage minuscule d'angle, poinçonnage tactile au doigtier, frottement d'encre grasse ou cire) pour lire leur identité au toucher ou sous un certain angle de lumière.",
+            "mots_cles": [
+              "crimp",
+              "daub",
+              "punch",
+              "peg",
+              "nail nick",
+              "tactile mark",
+              "repérage tactile",
+              "carte cornée"
+            ],
+            "sections": []
+          }
+        ]
+      },
+      {
+        "titre": "PARTIE 3 : CARTES ET JEUX TRUQUÉS",
+        "definition": "Jeux et cartes d'usine modifiés mécaniquement, chimiquement ou par tirage graphique spécial, permettant d'exécuter des miracles sans faire appel à des manipulations complexes.",
+        "mots_cles": [
+          "trick deck",
+          "gaffed cards",
+          "jeu truqué",
+          "cartes truquées"
+        ],
+        "chapitres": [
+          {
+            "titre": "Chapitre 1 : Les Jeux Biseautés",
+            "definition": "Paquet dont les cartes sont taillées en cône ou trapèze infinitésimal, permettant au magicien d'extraire instantanément n'importe quelle carte inversée ou sélectionnée par simple glissement des doigts le long de la tranche.",
+            "mots_cles": [
+              "stripper deck",
+              "tapered deck",
+              "wizard deck",
+              "side stripper",
+              "end stripper",
+              "jeu biseauté"
+            ],
+            "sections": []
+          },
+          {
+            "titre": "Chapitre 2 : Les Jeux Marqués",
+            "definition": "Jeu de cartes dont le motif du dos comporte une altération d'imprimerie secrète (système de lecture directe masquée ou système d'horloge codé) permettant au magicien de lire la valeur et la famille de la carte depuis son dos.",
+            "mots_cles": [
+              "marked deck",
+              "reader deck",
+              "marked cards",
+              "boris wild system",
+              "jeu marqué",
+              "marquage de dos"
+            ],
+            "sections": []
+          },
+          {
+            "titre": "Chapitre 3 : Les Jeux à Forçage",
+            "definition": "Jeux manufacturés composés exclusivement de 52 cartes identiques (une voie) ou alternant 2 à 3 valeurs prédéfinies pour forcer infailliblement le choix du spectateur sans geste suspect.",
+            "mots_cles": [
+              "forcing deck",
+              "one-way forcing deck",
+              "two-way forcing deck",
+              "monte carlo forcing deck",
+              "jeu à forcer"
+            ],
+            "sections": []
+          },
+          {
+            "titre": "Chapitre 4 : Les Jeux à Principe",
+            "definition": "Jeux reposant sur des principes mécaniques physiques (alternance de cartes courtes et longues du Svengali) ou chimiques (enduction de vernis rugueux/lisse Rough & Smooth), permettant de bloquer ou libérer les cartes par paires.",
+            "mots_cles": [
+              "svengali",
+              "svengali deck",
+              "mirage deck",
+              "rough and smooth",
+              "mene tekel",
+              "rugueux et lisse"
+            ],
+            "sections": []
+          },
+          {
+            "titre": "Chapitre 5 : Cartes Truquées à l'Unité",
+            "definition": "Cartes individuelles à impression non standard (double dos unicolore ou bicolore, double face, faces blanches, cartes courtes, cartes épaissies) intégrées subrepticement dans un jeu ordinaire.",
+            "mots_cles": [
+              "gaff card",
+              "double back",
+              "double face",
+              "blank face",
+              "blank deck",
+              "short card",
+              "thick card",
+              "carte truquée"
+            ],
+            "sections": []
+          },
+          {
+            "titre": "Chapitre 6 : Cartes Clefs",
+            "definition": "Carte ordinaire dont l'identité est mémorisée, ou carte préparée physiquement (coin rogné, surépaisseur, boursouflure) servant de borne de repérage infaillible dans le jeu pour retrouver la sélection.",
+            "mots_cles": [
+              "key card",
+              "corner short",
+              "locator card",
+              "thick card",
+              "carte clef",
+              "carte repère"
+            ],
+            "sections": []
+          },
+          {
+            "titre": "Chapitre 7 : Accessoires Invisibles",
+            "definition": "Adhésifs et produits chimiques auxiliaires (cire de magicien repositionnable, liquide rugueux, ruban double-face fin) appliqués ponctuellement pour lier deux cartes ensemble de manière invisible pendant une routine.",
+            "mots_cles": [
+              "magician's wax",
+              "cire de magicien",
+              "roughing fluid",
+              "roughing stick",
+              "repositionable adhesive",
+              "accessoires invisibles"
+            ],
+            "sections": []
+          }
+        ]
+      }
+    ]
+  },
+  "livre_pieces_techniques": {
+    "nom": "Techniques de Pièces",
+    "fichier_word": "SOMMAIRE TECHNIQUES DE PIECES.docx",
+    "fichier_excel": "Livre Techniques Pièces.xlsx",
+    "prefixe_id": "TECH_PIECE",
+    "dossier_sources": "Sources/sources_lisibles/sources techniques Pièces",
+    "structure": [
+      {
+        "titre": "PARTIE 1 : PIÈCES NORMALES",
+        "definition": "Mouvements de manipulation pure réalisés avec des pièces de monnaie standard non truquées, reposant exclusivement sur la dextérité, l'angle de vue et le timing.",
+        "mots_cles": [
+          "regular coin",
+          "sleight of hand",
+          "pièce normale",
+          "manipulation"
+        ],
+        "chapitres": [
+          {
+            "titre": "Chapitre 1 : Cacher",
+            "definition": "Maintien secret d'une ou plusieurs pièces dans la main (paume, doigts, articulations) tout en conservant une posture naturelle ou en manipulant d'autres objets.",
+            "mots_cles": [
+              "empalmage",
+              "palm",
+              "concealment",
+              "classic palm",
+              "finger palm",
+              "thumb palm",
+              "edge palm",
+              "edge grip",
+              "downs palm",
+              "back palm",
+              "tenkai",
+              "finger clip",
+              "galea",
+              "nowhere palm"
+            ],
+            "sections": []
+          },
+          {
+            "titre": "Chapitre 2 : Faire disparaître",
+            "definition": "Action de feindre de déposer, lancer ou prendre une pièce en main, alors qu'elle est en réalité retenue secrètement dans la main d'origine ou projetée hors de vue, donnant l'illusion de sa volatilisation.",
+            "mots_cles": [
+              "disparition",
+              "vanish",
+              "french drop",
+              "tourniquet",
+              "retention vanish",
+              "retention pass",
+              "pinch vanish",
+              "snap vanish",
+              "click vanish",
+              "pass vanish"
+            ],
+            "sections": []
+          },
+          {
+            "titre": "Chapitre 3 : Échanger",
+            "definition": "Remplacement invisible et synchronisé d'une pièce visible par une autre pièce préalablement dissimulée (ou inversement), lors d'un geste de passage ou de manipulation anodin.",
+            "mots_cles": [
+              "échange",
+              "switch",
+              "bobo switch",
+              "roth switch",
+              "shuttle pass",
+              "troc",
+              "substitut",
+              "fingertip pass"
+            ],
+            "sections": []
+          },
+          {
+            "titre": "Chapitre 4 : Faire apparaître",
+            "definition": "Matérialisation visuelle d'une pièce semblant venir du néant ou de l'air ambiant, en l'extrayant d'un empalmage secret vers le bout des doigts de façon instantanée.",
+            "mots_cles": [
+              "apparition",
+              "production",
+              "appear",
+              "miser's dream",
+              "rêve de l'avare",
+              "aerial catch",
+              "catch"
+            ],
+            "sections": []
+          },
+          {
+            "titre": "Chapitre 5 : Transformer",
+            "definition": "Modification visuelle apparente de la nature, de la couleur ou de la valeur d'une pièce tenue à vue (passer de l'argent au cuivre) par frottement ou passe magique.",
+            "mots_cles": [
+              "transformation",
+              "transposition",
+              "changement de métal",
+              "spellbound",
+              "silver extraction"
+            ],
+            "sections": []
+          },
+          {
+            "titre": "Chapitre 6 : Charger",
+            "definition": "Introduction secrète d'une pièce sous un objet (tasse, carte, verre, boîte) ou dans la main de façon fluide et imperceptible juste avant une révélation.",
+            "mots_cles": [
+              "charger",
+              "chargement",
+              "load",
+              "body load",
+              "pocket load"
+            ],
+            "sections": []
+          },
+          {
+            "titre": "Chapitre 7 : Voler",
+            "definition": "Récupération furtive d'une pièce dissimulée (dans la poche, sous la veste, au bord de table ou sous une carte) pendant que l'attention du public est détournée.",
+            "mots_cles": [
+              "vol",
+              "voler",
+              "steal",
+              "pocket steal",
+              "jacket steal",
+              "dérober"
+            ],
+            "sections": []
+          },
+          {
+            "titre": "Chapitre 8 : Tromper",
+            "definition": "Simulation auditive ou visuelle faisant croire que plusieurs pièces s'entrechoquent ou tombent en main, alors qu'une seule (ou aucune) n'a réellement bougé.",
+            "mots_cles": [
+              "tromper",
+              "bruit de pièce",
+              "auditory illusion",
+              "sound subtlety",
+              "click pass"
+            ],
+            "sections": []
+          },
+          {
+            "titre": "Chapitre 9 : Lapping & Sleeving",
+            "definition": "Utilisation secrète de la gravité ou de l'inertie pour laisser tomber ou projeter une pièce sur les genoux (giron) ou à l'intérieur de la manche de chemise.",
+            "mots_cles": [
+              "lapping",
+              "sleeving",
+              "manche",
+              "giron",
+              "au giron",
+              "dans la manche"
+            ],
+            "sections": []
+          },
+          {
+            "titre": "Chapitre 10 : Fioritures & Dextérité",
+            "definition": "Démonstrations esthétiques et manipulations complexes à vue (faire rouler une pièce sur les articulations, cascade de pièces, étoiles) prouvant la virtuosité du magicien.",
+            "mots_cles": [
+              "fioriture",
+              "flourish",
+              "coin roll",
+              "steeplechase",
+              "dextérité",
+              "jonglage",
+              "coin star",
+              "roll down",
+              "arm roll"
+            ],
+            "sections": []
+          }
+        ]
+      },
+      {
+        "titre": "PARTIE 2 : PIÈCES TRUQUÉES",
+        "definition": "Utilisation de pièces spécialement usinées ou modifiées mécaniquement pour réaliser des effets impossibles à exécuter par la seule manipulation manuelle.",
+        "mots_cles": [
+          "pièce truquée",
+          "gaff coin",
+          "gimmick coin",
+          "truquage"
+        ],
+        "chapitres": [
+          {
+            "titre": "Chapitre 1 : La Coquille Expansée",
+            "definition": "Coiffe métallique creuse et légèrement surdimensionnée s'emboîtant parfaitement sur une pièce normale pour en dissimuler la présence ou doubler visuellement les pièces.",
+            "mots_cles": [
+              "coquille",
+              "coquille expansée",
+              "expanded shell",
+              "shell",
+              "shell coin"
+            ],
+            "sections": []
+          },
+          {
+            "titre": "Chapitre 2 : La Pièce Cuivre / Argent",
+            "definition": "Pièce hybride confectionnée avec un côté face en cuivre et un côté pile en argent, permettant des transpositions ou disparitions par simple retournement.",
+            "mots_cles": [
+              "cuivre argent",
+              "copper silver",
+              "c/s coin",
+              "copper / silver"
+            ],
+            "sections": []
+          },
+          {
+            "titre": "Chapitre 3 : La Pièce Pliante",
+            "definition": "Pièce découpée en 2 ou 3 segments articulés par un élastique invisible, lui permettant de se plier pour entrer dans une bouteille avant de reprendre sa forme.",
+            "mots_cles": [
+              "pliante",
+              "pièce pliante",
+              "folding coin",
+              "folding half",
+              "folding quarter"
+            ],
+            "sections": []
+          },
+          {
+            "titre": "Chapitre 4 : La Flipper Coin",
+            "definition": "Pièce biseautée munie d'un demi-volet mobile rétractable monté sur élastique, capable de donner instantanément l'illusion de 2 pièces ou d'une disparition sans empalmage.",
+            "mots_cles": [
+              "flipper",
+              "flipper coin",
+              "pièce flipper"
+            ],
+            "sections": []
+          },
+          {
+            "titre": "Chapitre 5 : Les Pièces Magnétiques et Aimantées",
+            "definition": "Pièces contenant un aimant néodyme puissant ou un noyau en acier ferromagnétique, conçues pour être attirées, dissimulées ou retenues par un aimant externe.",
+            "mots_cles": [
+              "magnétique",
+              "aimant",
+              "aimantée",
+              "magnetic coin",
+              "shimmed",
+              "steel core",
+              "raven"
+            ],
+            "sections": []
+          },
+          {
+            "titre": "Chapitre 6 : Scotch & Soda et Sun & Moon",
+            "definition": "Système combiné d'emboîtement à bague où une pièce de cuivre s'enclenche de façon autobloquante à l'intérieur d'une pièce d'argent creuse pour une disparition totale dans la main du spectateur.",
+            "mots_cles": [
+              "scotch and soda",
+              "scotch & soda",
+              "sun and moon",
+              "sun & moon"
+            ],
+            "sections": []
+          },
+          {
+            "titre": "Chapitre 7 : Copper / Silver / Brass",
+            "definition": "Routine et set de 3 pièces de devises et métaux différents (cuivre, argent, pièce chinoise trouée en laiton) utilisant des coquilles emboîtées pour des transpositions en chaîne.",
+            "mots_cles": [
+              "copper silver brass",
+              "csb",
+              "c/s/b",
+              "centavo"
+            ],
+            "sections": []
+          },
+          {
+            "titre": "Chapitre 8 : Pièces Double Face et Double Pile",
+            "definition": "Pièces forgées avec deux faces identiques (deux têtes ou deux piles), idéales pour forcer un résultat de pile ou face ou tromper les décomptes.",
+            "mots_cles": [
+              "double face",
+              "double pile",
+              "double head",
+              "double tail",
+              "two headed"
+            ],
+            "sections": []
+          },
+          {
+            "titre": "Chapitre 9 : Pièces Trouées et Pièces Mordues",
+            "definition": "Pièce truquée avec un quart monté sur élastique simulant qu'un morceau a été croqué par le magicien avant d'être régénéré d'un souffle.",
+            "mots_cles": [
+              "pièce mordue",
+              "mordue",
+              "bite coin",
+              "bitten coin",
+              "pièce trouée",
+              "chiseled"
+            ],
+            "sections": []
+          },
+          {
+            "titre": "Chapitre 10 : Pièces à Crochet",
+            "definition": "Pièce équipée d'un minuscule ergot recourbé soudé sur sa tranche, permettant de l'accrocher instantanément à la manche ou au pantalon sans empalmage.",
+            "mots_cles": [
+              "crochet",
+              "pièce à crochet",
+              "hook coin"
+            ],
+            "sections": []
+          },
+          {
+            "titre": "Chapitre 11 : Pièce TUC et Triple TUC",
+            "definition": "Pièce truquée moderne intégrant un système d'aimant invisible et d'emboîtement ultra-fin permettant apparitions, disparitions et traversées de matières sans bague de déblocage.",
+            "mots_cles": [
+              "tuc",
+              "triple tuc",
+              "tango ultimate coin",
+              "tango ultimate"
+            ],
+            "sections": []
+          }
+        ]
+      },
+      {
+        "titre": "PARTIE 3 : BOÎTES À PIÈCES",
+        "definition": "Petites boîtes métalliques cylindriques munies d'un couvercle (souvent en laiton) utilisées pour faire voyager des pièces à travers la table ou le métal.",
+        "mots_cles": [
+          "boîte à pièces",
+          "coin box",
+          "boîte laiton"
+        ],
+        "chapitres": [
+          {
+            "titre": "Chapitre 1 : La Boîte Okito",
+            "definition": "Boîte circulaire symétrique dont le fond et le bord inférieur sont dimensionnés pour accueillir un retournement secret discret (Okito turnover) afin de voler les pièces.",
+            "mots_cles": [
+              "okito",
+              "boîte okito",
+              "okito box"
+            ],
+            "sections": []
+          },
+          {
+            "titre": "Chapitre 2 : La Boîte Boston",
+            "definition": "Boîte dérivée de l'Okito, dotée d'une gorge sous sa base pouvant loger une pièce permanente pour feindre que la boîte est toujours pleine après le vol.",
+            "mots_cles": [
+              "boston",
+              "boîte boston",
+              "boston box"
+            ],
+            "sections": []
+          },
+          {
+            "titre": "Chapitre 3 : La Duvivier Coin Box",
+            "definition": "Boîte truquée de précision combinant les propriétés de la boîte Okito, de la boîte Boston et d'un bloc plein, permettant de terminer totalement examinable.",
+            "mots_cles": [
+              "duvivier",
+              "boîte duvivier",
+              "duvivier coin box"
+            ],
+            "sections": []
+          }
+        ]
+      }
+    ]
+  },
+  "livre_tours_cartes": {
+    "nom": "Tours de Cartes",
+    "fichier_word": "SOMMAIRE TOURS DE CARTES.docx",
+    "fichier_excel": "Livre Tours de Cartes.xlsx",
+    "prefixe_id": "TOUR_CARTE",
+    "dossier_sources": "Sources/sources_lisibles/sources tours de Cartes",
+    "structure": [
+      {
+        "titre": "PARTIE 1 : TOURS AVEC MATÉRIEL TRUQUÉ (Gimmicks)",
+        "definition": "Routines et effets magiques nécessitant l'emploi de cartes spécialement imprimées, usinées ou traitées chimiquement pour produire des illusions visuelles impossibles avec un jeu standard.",
+        "mots_cles": [
+          "gimmick deck",
+          "gaffed card magic",
+          "tours truqués",
+          "effets spéciaux"
+        ],
+        "chapitres": [
+          {
+            "titre": "Chapitre 1 : Cartes Gaffes à l'Unité",
+            "definition": "Tours reposant sur l'introduction discrète d'une ou plusieurs cartes d'impression anormale au sein d'un jeu ordinaire pour simuler des fusions, disparitions ou décalquages visuels.",
+            "mots_cles": [
+              "gaff card",
+              "carte truquée",
+              "carte gaffe"
+            ],
+            "sections": [
+              {
+                "titre": "Section 1 : Cartes Double Dos & Double Dos Couleur",
+                "definition": "Cartes imprimées avec deux motifs de dos (identiques ou de couleurs contrastées bleu/rouge), idéales pour dissimuler une face ou simuler des changements instantanés de jeu.",
+                "mots_cles": [
+                  "double back",
+                  "double-backer",
+                  "double dos",
+                  "contrasting back",
+                  "color change back"
+                ]
+              },
+              {
+                "titre": "Section 2 : Cartes Double Face",
+                "definition": "Cartes imprimées avec une face de chaque côté (sans aucun dos), permettant des transpositions éclair de cartes ou des disparitions totales en sandwich.",
+                "mots_cles": [
+                  "double face",
+                  "double-faced",
+                  "two-faced card",
+                  "double tête"
+                ]
+              },
+              {
+                "titre": "Section 3 : Cartes Blanches",
+                "definition": "Cartes vierges d'impression (faces blanches, dos blancs ou entièrement blanches), utilisées pour simuler l'effacement de l'encre ou l'impression magique à vue.",
+                "mots_cles": [
+                  "blank card",
+                  "blank face",
+                  "blank back",
+                  "all blank",
+                  "carte blanche",
+                  "effacement d'encre"
+                ]
+              },
+              {
+                "titre": "Section 4 : Jokers Révélation et Gaffes diverses",
+                "definition": "Cartes humoristiques ou narratives montrant le Joker tenant la carte choisie, cartes floues, cartes avec index multiples ou cartes déchirées et réparées.",
+                "mots_cles": [
+                  "revelation joker",
+                  "joker holding card",
+                  "misprinted card",
+                  "blurred card",
+                  "3 1/2 of clubs",
+                  "carte 14",
+                  "carte gaffe"
+                ]
+              }
+            ]
+          },
+          {
+            "titre": "Chapitre 2 : Les Jeux Truqués Classiques",
+            "definition": "Jeux complets usinés ou traités selon des principes mécaniques séculaires pour exécuter des classiques infaillibles du répertoire.",
+            "mots_cles": [
+              "trick deck",
+              "classic trick deck",
+              "jeu truqué"
+            ],
+            "sections": [
+              {
+                "titre": "Section 1 : Le Jeu Biseauté (Stripper Deck)",
+                "definition": "Routines d'extraction instantanée de cartes inversées, de tri de couleurs par effleurement ou de contrôle automatique de cartes perdues dans le jeu.",
+                "mots_cles": [
+                  "stripper deck",
+                  "tapered deck",
+                  "wizard deck",
+                  "miracle methods",
+                  "jeu biseauté"
+                ]
+              },
+              {
+                "titre": "Section 2 : Le Jeu Marqué",
+                "definition": "Démonstrations de télépathie, de prédiction et de voyance où l'identité d'une carte est révélée sans jamais en voir la face.",
+                "mots_cles": [
+                  "marked deck",
+                  "reader deck",
+                  "marked cards",
+                  "boris wild transparency",
+                  "jeu marqué"
+                ]
+              },
+              {
+                "titre": "Section 3 : Le Jeu Invisible",
+                "definition": "Phénomène légendaire où une carte librement pensée et nommée par le spectateur est retrouvée comme étant la seule carte retournée face en bas dans un jeu étalé.",
+                "mots_cles": [
+                  "invisible deck",
+                  "ultra mental deck",
+                  "reversed card thought of",
+                  "jeu invisible"
+                ]
+              },
+              {
+                "titre": "Section 4 : Le Svengali et Mirage Deck",
+                "definition": "Démonstrations spectaculaires où toutes les cartes sont montrées différentes, avant que le jeu complet ne se transforme instantanément en 52 copies de la carte choisie.",
+                "mots_cles": [
+                  "svengali deck",
+                  "mirage deck",
+                  "short card principle",
+                  "jeu svengali"
+                ]
+              },
+              {
+                "titre": "Section 5 : Le ESP Deck",
+                "definition": "Expériences de mentalisme pur utilisant les 5 symboles de Karl Zener (Cercle, Croix, Vagues, Carré, Étoile) pour des coïncidences et lectures de pensée.",
+                "mots_cles": [
+                  "esp deck",
+                  "esp cards",
+                  "zener cards",
+                  "rhine symbols",
+                  "tours esp"
+                ]
+              }
+            ]
+          },
+          {
+            "titre": "Chapitre 3 : Les Jeux Visuels et Spécifiques",
+            "definition": "Jeux thématiques modernes conçus pour des climax visuels radicaux ou des effets de changement d'apparence de paquet complet.",
+            "mots_cles": [
+              "visual deck",
+              "speciality deck",
+              "jeu visuel"
+            ],
+            "sections": [
+              {
+                "titre": "Section 1 : Rainbow Deck (Passeport, Spectrum, Fleurs)",
+                "definition": "Tours où un jeu aux dos apparemment uniformes révèle soudainement 52 dos de marques, logos ou couleurs complètement différents.",
+                "mots_cles": [
+                  "rainbow deck",
+                  "spectrum deck",
+                  "passport deck",
+                  "multi-back deck",
+                  "jeu multicolore"
+                ]
+              },
+              {
+                "titre": "Section 2 : Nudist / 6-Pack Deck",
+                "definition": "Routine où un paquet montré totalement blanc des deux côtés s'imprime magiquement face et dos devant les yeux du public, avant de redevenir entièrement vierge.",
+                "mots_cles": [
+                  "nudist deck",
+                  "mental photography deck",
+                  "blank deck printed",
+                  "jeu nudiste"
+                ]
+              },
+              {
+                "titre": "Section 3 : Fifty Shades of Red Deck",
+                "definition": "Routine contemporaine où les nuances de teintes de dos changent pour révéler des prédictions graduelles de couleurs.",
+                "mots_cles": [
+                  "fifty shades of red",
+                  "shades of red deck",
+                  "nuances de dos"
+                ]
+              },
+              {
+                "titre": "Section 4 : Vallorino Deck",
+                "definition": "Jeux spécifiques ou routines d'imprimerie et de transformations créés par Jean-Pierre Vallorino.",
+                "mots_cles": [
+                  "vallorino deck",
+                  "imprimerie vallorino",
+                  "championnat vallorino"
+                ]
+              },
+              {
+                "titre": "Section 5 : Le Jeu qui change de couleur",
+                "definition": "Climax visuel majeur où l'intégralité du jeu (dos bleu) change instantanément de couleur (dos rouge), à l'exception de la carte sélectionnée.",
+                "mots_cles": [
+                  "color changing deck",
+                  "deck color change",
+                  "changement de couleur de jeu"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "titre": "PARTIE 2 : TOURS AVEC UN JEU NORMAL (Non truqué)",
+        "definition": "Tours de magie réalisables avec un jeu de 52 cartes standard emprunté et sans trucage, reposant sur des principes psychologiques, des montages ingénieux ou la manipulation.",
+        "mots_cles": [
+          "regular deck magic",
+          "impromptu card magic",
+          "unprepared deck",
+          "jeu normal"
+        ],
+        "chapitres": [
+          {
+            "titre": "Chapitre 1 : Tours Automatiques (Sans manipulation)",
+            "definition": "Tours où l'effet magique se produit de façon infaillible par la seule structure mathématique, un arrangement préalable ou un procédé logique, sans faire appel à la dextérité manuelle.",
+            "mots_cles": [
+              "self-working",
+              "automatic card trick",
+              "sans manipulation"
+            ],
+            "sections": [
+              {
+                "titre": "Section 1 : Tours avec Histoires et Narrations",
+                "definition": "Routines où les cartes révélées au fur et à mesure illustrent une histoire contée par le magicien (ex: Les voleurs, Sam the Bellhop).",
+                "mots_cles": [
+                  "story trick",
+                  "sam the bellhop",
+                  "narrative card trick",
+                  "tour avec histoire",
+                  "conte magique"
+                ]
+              },
+              {
+                "titre": "Section 2 : Tours Mathématiques et d'Épellation",
+                "definition": "Retrouvailles automatiques basées sur des distributions chiffrées, le principe de Gilbreath ou l'épellation lettre par lettre du nom des cartes.",
+                "mots_cles": [
+                  "spelling trick",
+                  "mathematical trick",
+                  "21 card trick",
+                  "gilbreath principle",
+                  "épellation",
+                  "tour automatique"
+                ]
+              },
+              {
+                "titre": "Section 3 : Prédictions et Coïncidences (Out of this World...)",
+                "definition": "Miracles de synchronisme ou de pressentiment où spectateurs et magicien séparent les rouges des noires à l'aveugle (Out of this World de Paul Curry) ou reconstituent des paires parfaites.",
+                "mots_cles": [
+                  "out of this world",
+                  "paul curry",
+                  "coincidence trick",
+                  "prediction trick",
+                  "séparation rouge noir"
+                ]
+              }
+            ]
+          },
+          {
+            "titre": "Chapitre 2 : Tours avec Manipulation",
+            "definition": "Routines structurées exigeant l'enchaînement fluide de plusieurs techniques de cartomagie (passes, empalmages, faux comptages, levées doubles) devant le public.",
+            "mots_cles": [
+              "sleight of hand routine",
+              "manipulation",
+              "tour avec manipulation"
+            ],
+            "sections": [
+              {
+                "titre": "Section 1 : Magie de Petits Paquets (Twisting the aces...)",
+                "definition": "Routines féeriques utilisant seulement 4 à 8 cartes (les 4 As se retournant un par un comme dans Twisting the Aces, Huile et Eau, Cannibales).",
+                "mots_cles": [
+                  "packet trick",
+                  "twisting the aces",
+                  "oil and water",
+                  "huile et eau",
+                  "four aces",
+                  "petits paquets"
+                ]
+              },
+              {
+                "titre": "Section 2 : Révélations et Sandwichs",
+                "definition": "Tours où deux cartes gardiennes (ex: les deux Jokers ou deux Rois) emprisonnent subitement la carte choisie au milieu d'elles, ou révélations visuelles spectaculaires (carte ambitieuse, carte au plafond).",
+                "mots_cles": [
+                  "sandwich trick",
+                  "revelation",
+                  "ambitious card",
+                  "carte ambitieuse",
+                  "sandwich",
+                  "carte retrouvée"
+                ]
+              },
+              {
+                "titre": "Section 3 : Transpositions et Cartes Voyageuses",
+                "definition": "Effets où des cartes signées disparaissent d'un paquet pour voyager invisiblement dans les poches, sous la boîte ou dans les mains d'un spectateur (Cards Across).",
+                "mots_cles": [
+                  "cards across",
+                  "transposition",
+                  "card to pocket",
+                  "traveling cards",
+                  "carte voyageuse"
+                ]
+              },
+              {
+                "titre": "Section 4 : Démonstrations de Triche et Bonneteau",
+                "definition": "Scénarios mettant en scène le jeu de la carte errante (Bonneteau / Three Card Monte) ou des démonstrations théâtrales de poker truqué.",
+                "mots_cles": [
+                  "three card monte",
+                  "bonneteau",
+                  "gambling demonstration",
+                  "poker deal demonstration",
+                  "triche théâtrale"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "livre_tours_pieces": {
+    "nom": "Tours de Pièces",
+    "fichier_word": "SOMMAIRE TOURS DE PIECES.docx",
+    "fichier_excel": "Livre Tours de Pièces.xlsx",
+    "prefixe_id": "TOUR_PIECE",
+    "dossier_sources": "Sources/sources_lisibles/sources tours de pièces",
+    "structure": [
+      {
+        "titre": "PARTIE 1 : TOURS AVEC PIÈCES NORMALES",
+        "definition": "Routines et tours complets de numismagie exécutés avec des pièces de monnaie régulières non truquées, reposant sur la prestidigitation pure, le rythme, le timing et la gestion des angles.",
+        "mots_cles": [
+          "ungimmicked coin magic",
+          "sleight of hand coin routines",
+          "pure coin magic",
+          "regular coins",
+          "numismagie pure"
+        ],
+        "chapitres": [
+          {
+            "titre": "Chapitre 1 : Voyages de Pièces (Coins Across & Déplacements)",
+            "definition": "Routines où plusieurs pièces voyagent invisiblement et une à une d'une main à l'autre, de la main du magicien à celle du spectateur, ou sur la table.",
+            "mots_cles": [
+              "coins across",
+              "flying coins",
+              "three fly",
+              "winged silver",
+              "voyage de pièces",
+              "pièces voyageuses"
+            ],
+            "sections": [
+              {
+                "titre": "Section 1 : Coins Across classiques",
+                "definition": "Voyages successifs de pièces de la main gauche à la main droite (ou inversement), généralement exécutés en close-up assis ou debout avec comptage intermédiaire régulier.",
+                "mots_cles": [
+                  "classic coins across",
+                  "coins across to spectator's hand",
+                  "tallahasse jumping coins",
+                  "bobos coins across",
+                  "voyage classique de pièces"
+                ]
+              },
+              {
+                "titre": "Section 2 : Three Fly",
+                "definition": "Voyage ultra-visuel de trois pièces au bout des doigts, les bras écartés et à hauteur du regard des spectateurs, sans refermer les mains.",
+                "mots_cles": [
+                  "three fly",
+                  "retro fly",
+                  "fingertip coins across",
+                  "visual coins across",
+                  "three coins across in the air"
+                ]
+              },
+              {
+                "titre": "Section 3 : Winged Silver & Déplacements aériens",
+                "definition": "Enchaînements inspirés de Nelson Downs et David Roth où les pièces disparaissent et réapparaissent avec un affichage des mains ouvertes et des transferts secrets en repos (Edge Grip, Curl Palm).",
+                "mots_cles": [
+                  "winged silver",
+                  "winged silver on edge",
+                  "downs coins across",
+                  "edge grip coins across"
+                ]
+              }
+            ]
+          },
+          {
+            "titre": "Chapitre 2 : Matrices et Assemblages (Coin Assemblies)",
+            "definition": "Routines dans lesquelles 4 pièces disposées aux quatre coins d'un tapis se rassemblent mystérieusement sous une seule carte ou sous la main du magicien.",
+            "mots_cles": [
+              "coin matrix",
+              "coin assembly",
+              "assemblage de pièces",
+              "matrice de pièces"
+            ],
+            "sections": [
+              {
+                "titre": "Section 1 : Matrix classique",
+                "definition": "Assemblage aux quatre coins inventé par Al Schneider, utilisant 4 pièces et 4 cartes à jouer, où les pièces se rejoignent une à une sous une carte leader.",
+                "mots_cles": [
+                  "classic matrix",
+                  "schneider matrix",
+                  "four coin assembly",
+                  "reverse card pickup",
+                  "matrice classique"
+                ]
+              },
+              {
+                "titre": "Section 2 : Reverse Matrix",
+                "definition": "Routines de matrice où, après le rassemblement complet des 4 pièces sous une seule carte, ces dernières se redispersent instantanément aux quatre coins du tapis.",
+                "mots_cles": [
+                  "reverse matrix",
+                  "backfire matrix",
+                  "instant return matrix",
+                  "matrice inversée",
+                  "retour aux quatre coins"
+                ]
+              },
+              {
+                "titre": "Section 3 : Chink-a-Chink",
+                "definition": "Assemblage direct de pièces (ou bouchons/poids) exécuté à mains nues sans l'utilisation de cartes, les mains se posant fugitivement sur les objets pour les faire voyager.",
+                "mots_cles": [
+                  "chink-a-chink",
+                  "bare handed matrix",
+                  "shadow coins",
+                  "assemblage mains nues",
+                  "malini coin assembly"
+                ]
+              }
+            ]
+          },
+          {
+            "titre": "Chapitre 3 : Métamorphoses et Changements Visuels",
+            "definition": "Tours axés sur des métamorphoses à vue de la matière, de la couleur ou de la valeur des pièces, créant un impact visuel direct sans apparat.",
+            "mots_cles": [
+              "color change",
+              "spellbound",
+              "wild coin",
+              "métamorphose de pièce",
+              "changement visuel"
+            ],
+            "sections": [
+              {
+                "titre": "Section 1 : Routines de Spellbound",
+                "definition": "Série de transformations répétées d'une pièce tenue du bout des doigts (ex: argent devenant cuivre, puis or, puis disparaissant), popularisée par Dai Vernon.",
+                "mots_cles": [
+                  "spellbound",
+                  "spellbound routine",
+                  "continuous spellbound",
+                  "ultimate silver extraction",
+                  "vernon spellbound"
+                ]
+              },
+              {
+                "titre": "Section 2 : Wild Coin",
+                "definition": "Routine où plusieurs pièces régulières en argent sont déposées une par une sur une coupelle ou une table et se contaminent visuellement pour toutes devenir en cuivre ou chinoises.",
+                "mots_cles": [
+                  "wild coin",
+                  "wild coin on edge",
+                  "twilight zone wild coin",
+                  "favorite wild coin",
+                  "pièce sauvage"
+                ]
+              },
+              {
+                "titre": "Section 3 : Transpositions Cuivre / Argent impromptues",
+                "definition": "Échanges instantanés de place entre une pièce de cuivre et une pièce d'argent sans recourir à des pièces truquées, basés sur des passes d'échange pures et des subtilités de timing.",
+                "mots_cles": [
+                  "ungimmicked copper silver",
+                  "digital copper silver",
+                  "tabled copper silver",
+                  "transposition cuivre argent pure"
+                ]
+              }
+            ]
+          },
+          {
+            "titre": "Chapitre 4 : Traversées et Pénétrations Physiques",
+            "definition": "Effets démontrant l'illusion de pièces de métal traversant la matière solide apparemment impénétrable.",
+            "mots_cles": [
+              "penetration",
+              "coins through",
+              "solid through solid",
+              "pénétration de matière",
+              "traversée"
+            ],
+            "sections": [
+              {
+                "titre": "Section 1 : Pièces à travers la table",
+                "definition": "Classique majeur où 3 ou 4 pièces posées sur une table en bois la traversent une à une ou en bloc pour être récupérées dans la main placée en dessous.",
+                "mots_cles": [
+                  "coins through the table",
+                  "rubinstein coins through table",
+                  "han ping chien coins through table",
+                  "pièces à travers la table"
+                ]
+              },
+              {
+                "titre": "Section 2 : Pièces à travers un foulard, tissu ou carte",
+                "definition": "Pénétration visible ou graduelle où une pièce fond à travers le tissage d'un mouchoir en soie, un morceau de tissu tendu ou une carte à jouer.",
+                "mots_cles": [
+                  "coins through silk",
+                  "coin through handkerchief",
+                  "coin through card",
+                  "pièce à travers foulard"
+                ]
+              },
+              {
+                "titre": "Section 3 : Pièces à travers la main",
+                "definition": "Effets où des pièces pénètrent la paume fermée ou le dos de la main du magicien ou du spectateur sans ouverture apparente des doigts.",
+                "mots_cles": [
+                  "coins through hand",
+                  "coins through the fist",
+                  "pièce à travers la main"
+                ]
+              }
+            ]
+          },
+          {
+            "titre": "Chapitre 5 : Productions, Flurry et Routines Solo",
+            "definition": "Routines individuelles ou d'ouverture mettant en scène des séries de disparitions et apparitions rapides, des climax de taille ou des démonstrations d'abondance financière.",
+            "mots_cles": [
+              "production",
+              "flurry",
+              "miser's dream",
+              "one coin routine",
+              "production de pièces"
+            ],
+            "sections": [
+              {
+                "titre": "Section 1 : One Coin Routine & Flurry",
+                "definition": "Routine continue et rythmée avec une seule pièce qui disparaît, réapparaît en divers endroits du corps, change de taille et culmine souvent par la production d'une pièce géante (Jumbo Coin).",
+                "mots_cles": [
+                  "one coin routine",
+                  "the flurry",
+                  "flurry climax",
+                  "jumbo coin production",
+                  "routine à une pièce"
+                ]
+              },
+              {
+                "titre": "Section 2 : Hanging Coins",
+                "definition": "Routine poétique créée par David Roth où quatre pièces sont accrochées une à une de façon invisible dans l'air, puis réapparaissent simultanément ou successivement.",
+                "mots_cles": [
+                  "hanging coins",
+                  "original hanging coins",
+                  "roth hanging coins",
+                  "pièces suspendues dans l'espace"
+                ]
+              },
+              {
+                "titre": "Section 3 : Le Rêve de l'Avare",
+                "definition": "Numéro classique de scène ou salon où le magicien produit continuellement des dizaines de pièces matérialisées dans l'air et les fait tinter dans un seau métallique ou un chapeau.",
+                "mots_cles": [
+                  "miser's dream",
+                  "aerial treasury",
+                  "robert-houdin miser",
+                  "downs miser's dream",
+                  "le rêve de l'avare",
+                  "seau aux pièces"
+                ]
+              }
+            ]
+          },
+          {
+            "titre": "Chapitre 6 : Pièces et Accessoires Combinés",
+            "definition": "Routines théâtralisées incorporant des accessoires externes du magicien (baguette, cylindre de cuir, gobelet, jetons de casino, cartes à jouer).",
+            "mots_cles": [
+              "coins and props",
+              "cylinder and coins",
+              "coins and cards",
+              "coins and wand",
+              "pièces et accessoires"
+            ],
+            "sections": [
+              {
+                "titre": "Section 1 : Le Cylindre et les Pièces",
+                "definition": "Chef-d'œuvre de John Ramsay où quatre pièces voyagent sous un cylindre de cuir sans fond en remplaçant mystérieusement un petit bouchon de liège.",
+                "mots_cles": [
+                  "ramsay cylinder and coins",
+                  "cylinder and coins",
+                  "leather cylinder",
+                  "cylindre et pièces"
+                ]
+              },
+              {
+                "titre": "Section 2 : Routines Pièces et Cartes combinées",
+                "definition": "Routines hybrides alliant manipulations de cartes et de pièces (transpositions pièce-carte, révélations sous carte, voodoo revelations).",
+                "mots_cles": [
+                  "coins and cards",
+                  "voodoo revelation",
+                  "coin to card",
+                  "pièces et cartes combinées"
+                ]
+              },
+              {
+                "titre": "Section 3 : Routines Pièces et Baguette, Gobelet ou Jetons de Poker",
+                "definition": "Effets combinés avec des baguettes (Wand & Coins), des gobelets de close-up ou des jetons de casino (Coins & Poker Chips).",
+                "mots_cles": [
+                  "wand and coins",
+                  "coins and poker chips",
+                  "coins to cup",
+                  "pièces et baguette"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "titre": "PARTIE 2 : TOURS AVEC PIÈCES TRUQUÉES",
+        "definition": "Routines reposant sur l'emploi de pièces fabriquées par des artisans de précision (gimmicks mécaniques, pièces creuses, sets magnétiques), décuplant l'impossibilité magique.",
+        "mots_cles": [
+          "gimmicked coin magic",
+          "gaffed coins",
+          "precision coin gaffs",
+          "pièces truquées",
+          "numismagie truquée"
+        ],
+        "chapitres": [
+          {
+            "titre": "Chapitre 1 : Routines avec Coquille Expansée (Expanded Shell)",
+            "definition": "Routines exploitant la surépaisseur invisible d'une fausse face de pièce (coquille) recouvrant une pièce identique.",
+            "mots_cles": [
+              "expanded shell routines",
+              "shell coin tricks",
+              "coquille expansée",
+              "falsa monedero"
+            ],
+            "sections": [
+              {
+                "titre": "Section 1 : Disparitions et apparitions sous coquille",
+                "definition": "Disparitions nettes ou productions instantanées où plusieurs pièces semblent se condenser en une seule grâce à l'emboîtement secret.",
+                "mots_cles": [
+                  "shell vanishes",
+                  "shell productions",
+                  "clean coin vanish with shell"
+                ]
+              },
+              {
+                "titre": "Section 2 : Voyages et matrices sous coquille",
+                "definition": "Voyages de pièces (Coins Across) et matrices ultra-propres où la coquille permet de dissimuler le vol ou l'avance d'une pièce avec un travail manuel minimal.",
+                "mots_cles": [
+                  "shell coins across",
+                  "shell matrix",
+                  "expanded shell assembly"
+                ]
+              }
+            ]
+          },
+          {
+            "titre": "Chapitre 2 : Transpositions et Sets Gimmickés Classiques",
+            "definition": "Routines utilisant des pièces composites et des sets classiques forgés dans deux métaux distincts (cuivre, argent, laiton).",
+            "mots_cles": [
+              "copper silver sets",
+              "scotch and soda",
+              "csb",
+              "hopping halves",
+              "sets de pièces classiques"
+            ],
+            "sections": [
+              {
+                "titre": "Section 1 : Cuivre / Argent truqué",
+                "definition": "Transpositions et métamorphoses franches en main du spectateur utilisant une pièce double face cuivre/argent ou une pièce spéciale usinée.",
+                "mots_cles": [
+                  "copper silver coin routine",
+                  "gaffed copper silver",
+                  "transposition cuivre argent truquée"
+                ]
+              },
+              {
+                "titre": "Section 2 : Scotch & Soda / Sun & Moon",
+                "definition": "Routines automatiques ou quasi-automatiques où une pièce de centimes mexicain s'imbrique dans un demi-dollar pour disparaître de la main d'un spectateur.",
+                "mots_cles": [
+                  "scotch and soda routine",
+                  "sun and moon routine",
+                  "scotch and soda trick"
+                ]
+              },
+              {
+                "titre": "Section 3 : Copper / Silver / Brass (C.S.B.)",
+                "definition": "Trios de pièces (demi-dollar argent, pièce anglaise cuivre, pièce chinoise laiton à trou) exécutant des chassés-croisés impossibles entre la main et la poche.",
+                "mots_cles": [
+                  "csb routine",
+                  "copper silver brass",
+                  "c.s.b.",
+                  "trio de pièces métaux"
+                ]
+              },
+              {
+                "titre": "Section 4 : Hopping Halves & Sets multi-effets",
+                "definition": "Routines de répétition où le magicien range successivement deux pièces dans sa poche, celles-ci réapparaissant indéfiniment dans sa main avant de disparaître totalement au climax.",
+                "mots_cles": [
+                  "hopping halves",
+                  "hopping half routine",
+                  "ultimate silver and copper"
+                ]
+              }
+            ]
+          },
+          {
+            "titre": "Chapitre 3 : Pièces Mécaniques et Spéciales",
+            "definition": "Tours utilisant des pièces dotées de mécanismes internes ingénieux (élastiques, aimants néodyme, inserts).",
+            "mots_cles": [
+              "mechanical coins",
+              "folding coin",
+              "flipper coin",
+              "magnetic coins",
+              "pièces mécaniques"
+            ],
+            "sections": [
+              {
+                "titre": "Section 1 : Pièce Pliante (Folding Coin / Pièce dans la bouteille)",
+                "definition": "Routines où une pièce découpée en biseau sur élastique est enfoncée dans une bouteille de verre à goulot étroit ou introduite dans un récipient étanche.",
+                "mots_cles": [
+                  "folding coin",
+                  "coin in bottle",
+                  "new wave coin in bottle",
+                  "folding coins through table",
+                  "pièce pliante"
+                ]
+              },
+              {
+                "titre": "Section 2 : Flipper Coin (pièce à clapet)",
+                "definition": "Routines visuelles de disparition ou de voyage instantané utilisant une pièce munie d'un clapet biseauté rabattable sur élastique ou gravité.",
+                "mots_cles": [
+                  "flipper coin routine",
+                  "gravity flipper",
+                  "flipper coins across",
+                  "pièce à clapet"
+                ]
+              },
+              {
+                "titre": "Section 3 : Pièces Magnétiques et Aimantées",
+                "definition": "Tours exploitant l'attraction magnétique discrète (disparition au Raven, arrêt sur table, pénétration de verre avec aimant dissimulé).",
+                "mots_cles": [
+                  "magnetic coins",
+                  "raven coin routine",
+                  "magnetic coin vanish",
+                  "pièces magnétiques"
+                ]
+              },
+              {
+                "titre": "Section 4 : Pièce TUC et Sets de précision moderne",
+                "definition": "Routines exploitant les sets modernes à verrouillage magnétique fin (Tango Ultimate Coin, Triple TUC) permettant des apparitions et disparitions d'une propreté absolue.",
+                "mots_cles": [
+                  "tuc coin routine",
+                  "tango ultimate coin",
+                  "triple tuc",
+                  "sets modernes tuc"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "titre": "PARTIE 3 : TOURS AVEC BOÎTES À PIÈCES",
+        "definition": "Routines complètes utilisant des boîtes cylindriques en laiton ou en bois (Okito, Boston, boîtes à encoche) pour réaliser des pénétrations, des voyages et des transpositions de haute volée.",
+        "mots_cles": [
+          "coin box magic",
+          "okito box routines",
+          "boston box routines",
+          "boîtes à pièces",
+          "routines de boîte okito"
+        ],
+        "chapitres": [
+          {
+            "titre": "Chapitre 1 : Routines de Boîte Okito",
+            "definition": "Routines canoniques basées sur la boîte en laiton inventée par Okito (Theo Bamberg), où les pièces traversent le fond en métal massif.",
+            "mots_cles": [
+              "okito box routines",
+              "classic okito",
+              "okito box table penetration",
+              "boîte okito"
+            ],
+            "sections": [
+              {
+                "titre": "Section 1 : Traversées de boîte et de table",
+                "definition": "Enchaînements où les pièces placées dans la boîte Okito fermée traversent simultanément le fond de la boîte et le plateau de la table.",
+                "mots_cles": [
+                  "okito through table",
+                  "okito through hand",
+                  "out with four",
+                  "out with five",
+                  "traversée okito"
+                ]
+              },
+              {
+                "titre": "Section 2 : Transpositions boîte et mains",
+                "definition": "Routines où des pièces marquées ou de métaux différents échangent leur position entre l'intérieur de la boîte et la main ou la poche du magicien.",
+                "mots_cles": [
+                  "okito transposition",
+                  "copper flight",
+                  "okito copper silver",
+                  "transposition okito"
+                ]
+              }
+            ]
+          },
+          {
+            "titre": "Chapitre 2 : Routines de Boîte Boston",
+            "definition": "Routines utilisant la boîte Boston (comportant un rebord inférieur simulant la présence d'une pièce), permettant de montrer la boîte pleine alors qu'elle est déjà vide.",
+            "mots_cles": [
+              "boston box routines",
+              "boston box applications",
+              "boîte boston",
+              "boston coin box"
+            ],
+            "sections": [
+              {
+                "titre": "Section 1 : Pénétrations visuelles boîte fermée",
+                "definition": "Traversées directes où la boîte fermée est posée sur le dos de la main ou une surface transparente, libérant les pièces à vue.",
+                "mots_cles": [
+                  "boston box penetration",
+                  "visual boston penetration",
+                  "pénétration boîte boston"
+                ]
+              },
+              {
+                "titre": "Section 2 : Enchaînements boîte Boston et table",
+                "definition": "Routines construites en plusieurs phases intégrant la boîte Boston, des retournements secrets sur table et des disparitions complètes.",
+                "mots_cles": [
+                  "boston box multi phase",
+                  "boston table routine",
+                  "enchaînement boston"
+                ]
+              }
+            ]
+          },
+          {
+            "titre": "Chapitre 3 : Boîtes Spéciales et Hybrides",
+            "definition": "Routines exploitant des boîtes modifiées mécaniquement (Slot Box, Plug Box, Boîte Duvivier) ou des empilements multiples de récipients.",
+            "mots_cles": [
+              "special coin boxes",
+              "slot box",
+              "plug box",
+              "duvivier coin box",
+              "nest of boxes",
+              "boîtes à pièces spéciales"
+            ],
+            "sections": [
+              {
+                "titre": "Section 1 : Boîtes à encoche et bouchon (Slot Box & Plug Box)",
+                "definition": "Routines tirant parti d'une boîte à encoche interne (Slot Box retenant une pièce sur tranche) ou d'un bloc massif (Plug Box créant un climax en métal plein).",
+                "mots_cles": [
+                  "slot box routine",
+                  "plug box routine",
+                  "boîte slot",
+                  "boîte bloc plein"
+                ]
+              },
+              {
+                "titre": "Section 2 : Boîte Duvivier (Duvivier Coin Box)",
+                "definition": "Routines révolutionnaires conçues par Dominique Duvivier combinant les propriétés d'une boîte Okito, d'une boîte Boston et se terminant par un bloc plein impossible à ouvrir.",
+                "mots_cles": [
+                  "duvivier coin box",
+                  "boite duvivier",
+                  "duvivier coin routine",
+                  "climax boîte pleine"
+                ]
+              },
+              {
+                "titre": "Section 3 : Nids de Boîtes (Nest of Boxes / Nest of Purses)",
+                "definition": "Routines où une pièce empruntée et marquée disparaît pour être retrouvée enfermée au centre d'une série de boîtes ou de bourses gigognes solidement ficelées.",
+                "mots_cles": [
+                  "nest of boxes",
+                  "nest of coin boxes",
+                  "nest of purses",
+                  "pièce dans le nid de boîtes"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

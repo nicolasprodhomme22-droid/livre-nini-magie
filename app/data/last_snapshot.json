@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-10-06 19:17:13",
+  "books": {
+    "cartes": 3473,
+    "pieces": 11441,
+    "tours": 3652,
+    "tours_pieces": 671
+  },
+  "total": 19237
+}

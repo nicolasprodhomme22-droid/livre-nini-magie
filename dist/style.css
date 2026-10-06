@@ -1,0 +1,1629 @@
+/* ==========================================================================
+   Livre nini magie — Feuille de style épurée et minimaliste
+   Charte stricte : Blanc, Noir, Bleu (#2563EB), Rouge (#DC2626).
+   Police classique lisible unique : Inter / sans-serif.
+   ========================================================================== */
+
+:root {
+  /* Palette stricte */
+  --color-white: #ffffff;
+  --color-black: #111827;
+  --color-black-pure: #000000;
+  --color-gray-light: #f8fafc;
+  --color-gray-border: #e2e8f0;
+  --color-gray-muted: #64748b;
+  
+  --color-blue: #2563eb;
+  --color-blue-hover: #1d4ed8;
+  --color-blue-soft: #eff6ff;
+
+  --color-red: #dc2626;
+  --color-red-hover: #b91c1c;
+  --color-red-soft: #fef2f2;
+
+  /* Typographie unique */
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Rayons et ombres sobres */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.05);
+  --shadow-modal: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Reset universel */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: var(--color-gray-light);
+  color: var(--color-black);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+/* ==========================================================================
+   EN-TÊTE PRINCIPAL (HEADER)
+   ========================================================================== */
+.app-header {
+  background-color: var(--color-white);
+  border-bottom: 1px solid var(--color-gray-border);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.app-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-black);
+  cursor: pointer;
+  letter-spacing: -0.3px;
+}
+
+.app-title:hover {
+  color: var(--color-blue);
+}
+
+/* Onglets de navigation */
+.app-nav {
+  display: flex;
+  gap: 8px;
+}
+
+.nav-tab {
+  background: transparent;
+  border: 1px solid transparent;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-gray-muted);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.nav-tab:hover {
+  color: var(--color-black);
+  background-color: var(--color-gray-light);
+}
+
+.nav-tab.active {
+  color: var(--color-blue);
+  background-color: var(--color-blue-soft);
+  border-color: var(--color-blue-soft);
+  font-weight: 600;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-count {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-gray-muted);
+  background-color: var(--color-gray-light);
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid var(--color-gray-border);
+}
+
+/* ==========================================================================
+   CONTENEUR PRINCIPAL & VUES
+   ========================================================================== */
+.app-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 1040px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 24px 20px;
+}
+
+.view-panel {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* ==========================================================================
+   ÉCRAN 1 : ACCUEIL DES 3 BOUTONS (BIBLIOTHÈQUE)
+   ========================================================================== */
+.screen-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.home-intro {
+  margin-bottom: 32px;
+}
+
+.home-intro h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--color-black);
+  margin-bottom: 6px;
+  letter-spacing: -0.4px;
+}
+
+.home-intro p {
+  font-size: 15px;
+  color: var(--color-gray-muted);
+}
+
+.home-books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1050px;
+}
+
+@media (max-width: 768px) {
+  .home-books-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+}
+
+.book-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-border);
+  border-radius: var(--radius-lg);
+  padding: 28px 24px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  cursor: pointer;
+  box-shadow: var(--shadow-card);
+  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+  position: relative;
+}
+
+.book-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-blue);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.1);
+}
+
+.book-card-symbol {
+  font-size: 36px;
+  line-height: 1;
+}
+
+.book-card-content {
+  flex: 1;
+}
+
+.book-card-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-black);
+  margin-bottom: 4px;
+}
+
+.book-card-count {
+  font-size: 13px;
+  color: var(--color-gray-muted);
+  font-weight: 500;
+}
+
+.book-card-arrow {
+  color: var(--color-blue);
+  font-size: 18px;
+  align-self: flex-end;
+  font-weight: 700;
+}
+
+/* ==========================================================================
+   VUE 2 : SOMMAIRE DÉPLIABLE DU LIVRE
+   ========================================================================== */
+.screen-sommaire-tree {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sommaire-book-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.book-selector-tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.btn-book-select {
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-border);
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-black);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-book-select:hover {
+  border-color: var(--color-blue);
+  color: var(--color-blue);
+}
+
+.btn-book-select.active {
+  background-color: var(--color-blue);
+  border-color: var(--color-blue);
+  color: var(--color-white);
+}
+
+.tree-tools {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-tool {
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-border);
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-black);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-tool:hover {
+  border-color: var(--color-black);
+}
+
+/* Barre de recherche épurée */
+.search-bar {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 12px 40px 12px 16px;
+  font-size: 14.5px;
+  border: 1px solid var(--color-gray-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-white);
+  color: var(--color-black);
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.search-bar input:focus {
+  border-color: var(--color-blue);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.search-count-badge {
+  position: absolute;
+  right: 40px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-blue);
+  background: var(--color-blue-soft);
+  padding: 3px 8px;
+  border-radius: 12px;
+}
+
+.btn-search-clear {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: var(--color-gray-muted);
+  cursor: pointer;
+  padding: 4px;
+}
+
+.btn-search-clear:hover {
+  color: var(--color-black);
+}
+
+/* ==========================================================================
+   ARBORESCENCE ACCORDÉON OFFICIELLE
+   ========================================================================== */
+.tree-wrapper {
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-border);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tree-loading {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--color-gray-muted);
+  font-size: 15px;
+}
+
+/* Nœud Partie */
+.partie-node {
+  border: 1px solid var(--color-gray-border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.partie-header {
+  background-color: var(--color-gray-light);
+  padding: 12px 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  user-select: none;
+  transition: background-color 0.15s ease;
+}
+
+.partie-header:hover {
+  background-color: #f1f5f9;
+}
+
+.partie-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 14.5px;
+  color: var(--color-black);
+}
+
+.chevron {
+  font-size: 11px;
+  color: var(--color-gray-muted);
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+
+.partie-header.open .chevron,
+.chapitre-header.open .chevron,
+.section-header.open .chevron {
+  transform: rotate(90deg);
+  color: var(--color-blue);
+}
+
+.partie-count, .chapitre-count, .section-count {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 12px;
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-border);
+  color: var(--color-gray-muted);
+}
+
+.partie-body {
+  display: none;
+  padding: 8px 12px 14px 12px;
+  background-color: var(--color-white);
+}
+
+.partie-body.open {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Nœud Chapitre */
+.chapitre-node {
+  border: 1px solid var(--color-gray-border);
+  border-radius: var(--radius-sm);
+  margin-top: 4px;
+}
+
+.chapitre-header {
+  padding: 10px 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  user-select: none;
+}
+
+.chapitre-header:hover {
+  background-color: var(--color-blue-soft);
+}
+
+.chapitre-header .partie-title {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.chapitre-body {
+  display: none;
+  padding: 6px 12px 10px 14px;
+  border-top: 1px solid var(--color-gray-border);
+}
+
+.chapitre-body.open {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Nœud Section */
+.section-node {
+  border-left: 2px solid var(--color-blue);
+  padding-left: 10px;
+  margin-top: 4px;
+}
+
+.section-header {
+  padding: 8px 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--color-black);
+}
+
+.section-header:hover {
+  color: var(--color-blue);
+}
+
+.section-body {
+  display: none;
+  padding: 4px 0 8px 0;
+}
+
+.section-body.open {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Note pour chapitres / sections vides */
+.tree-empty-note {
+  font-size: 13px;
+  font-style: italic;
+  color: var(--color-gray-muted);
+  padding: 8px 12px;
+  background-color: var(--color-gray-light);
+  border-radius: var(--radius-sm);
+  margin-top: 4px;
+}
+
+/* Techniques dans l'arborescence (Lignes épurées) */
+.tech-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  gap: 12px;
+}
+
+.tech-item:hover {
+  border-color: var(--color-blue);
+  background-color: var(--color-blue-soft);
+  transform: translateX(2px);
+}
+
+.tech-item-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-black);
+  flex: 1;
+}
+
+.tech-item-page {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-blue);
+  background: var(--color-blue-soft);
+  padding: 2px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.tech-item-arrow {
+  color: var(--color-gray-muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.tech-item:hover .tech-item-arrow {
+  color: var(--color-blue);
+}
+
+/* Barre de chargement progressif pour les grands chapitres */
+.tree-load-more-bar {
+  display: flex;
+  gap: 8px;
+  padding: 8px 0;
+  justify-content: center;
+}
+
+.btn-load-more {
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-border);
+  color: var(--color-black);
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-load-more:hover {
+  border-color: var(--color-blue);
+  color: var(--color-blue);
+  background-color: var(--color-blue-soft);
+}
+
+/* ==========================================================================
+   ÉCRAN 3 : FICHE TECHNIQUE DÉDIÉE
+   ========================================================================== */
+.screen-technique-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.detail-top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-back {
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-border);
+  color: var(--color-black);
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-back:hover {
+  border-color: var(--color-blue);
+  color: var(--color-blue);
+}
+
+.detail-id {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-gray-muted);
+  background: var(--color-white);
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid var(--color-gray-border);
+}
+
+.detail-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.detail-breadcrumb {
+  font-size: 13px;
+  color: var(--color-gray-muted);
+  font-weight: 500;
+}
+
+.detail-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-black);
+  line-height: 1.3;
+  letter-spacing: -0.3px;
+}
+
+/* Barre d'action technique */
+.detail-actions-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 14px 0;
+  border-top: 1px solid var(--color-gray-border);
+  border-bottom: 1px solid var(--color-gray-border);
+}
+
+/* Boutons universels */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.15s ease;
+  border: 1px solid transparent;
+}
+
+.btn-lg {
+  padding: 12px 22px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.btn-sm {
+  padding: 6px 12px;
+  font-size: 13px;
+}
+
+.btn-primary {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  border-color: var(--color-blue);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-blue-hover);
+  border-color: var(--color-blue-hover);
+}
+
+.btn-outline {
+  background-color: var(--color-white);
+  border-color: var(--color-gray-border);
+  color: var(--color-black);
+}
+
+.btn-outline:hover {
+  border-color: var(--color-blue);
+  color: var(--color-blue);
+  background-color: var(--color-blue-soft);
+}
+
+/* Blocs Effet & Méthode */
+.detail-block {
+  border-radius: var(--radius-md);
+  padding: 18px 20px;
+  border: 1px solid var(--color-gray-border);
+}
+
+.block-effet {
+  background-color: var(--color-blue-soft);
+  border-color: rgba(37, 99, 235, 0.2);
+}
+
+.block-methode {
+  background-color: var(--color-red-soft);
+  border-color: rgba(220, 38, 38, 0.2);
+}
+
+.detail-block-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.badge {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  letter-spacing: 0.5px;
+}
+
+.badge-blue {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
+
+.badge-red {
+  background-color: var(--color-red);
+  color: var(--color-white);
+}
+
+.detail-block-subtitle {
+  font-size: 12px;
+  color: var(--color-gray-muted);
+  font-weight: 500;
+}
+
+.detail-block-text {
+  font-size: 15px;
+  color: var(--color-black);
+  line-height: 1.6;
+}
+
+.detail-source-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13.5px;
+  color: var(--color-gray-muted);
+  padding: 8px 12px;
+  background: var(--color-gray-light);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-gray-border);
+}
+
+.source-value {
+  color: var(--color-black);
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   LECTEUR PDF INTÉGRÉ DANS LA FICHE TECHNIQUE
+   ========================================================================== */
+.detail-embedded-pdf {
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.embedded-pdf-header {
+  background-color: #1e293b;
+  color: var(--color-white);
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.embedded-pdf-title-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.embedded-pdf-filename {
+  font-size: 13px;
+  font-weight: 600;
+  max-width: 320px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.embedded-pdf-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.btn-pdf-nav {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--color-white);
+  padding: 6px 12px;
+  font-size: 12.5px;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.btn-pdf-nav:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.btn-pdf-nav:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.btn-close-modal {
+  background-color: var(--color-red);
+  border-color: var(--color-red);
+}
+
+.btn-close-modal:hover {
+  background-color: var(--color-red-hover);
+}
+
+.modal-page-indicator, .zoom-indicator {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #e2e8f0;
+  padding: 0 4px;
+}
+
+.modal-page-input {
+  width: 52px;
+  background: #1e293b;
+  color: #ffffff;
+  border: 1px solid #475569;
+  border-radius: 4px;
+  padding: 2px 4px;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 4px;
+}
+
+.modal-page-input:focus {
+  outline: none;
+  border-color: var(--color-blue);
+  background: #0f172a;
+}
+
+.embedded-pdf-body, .pdf-modal-body {
+  background-color: #334155;
+  padding: 20px;
+  min-height: 520px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-x: auto;
+  position: relative;
+}
+
+.pdf-render-status {
+  color: var(--color-white);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: var(--radius-sm);
+}
+
+.pdf-canvas {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  background: white;
+  max-width: 100%;
+  height: auto;
+  display: none;
+}
+
+/* ==========================================================================
+   LECTEUR PDF PLEIN ÉCRAN DÉDIÉ (MODAL)
+   ========================================================================== */
+.pdf-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(17, 24, 39, 0.95);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.pdf-modal-header {
+  height: 54px;
+  background-color: var(--color-black-pure);
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-bottom: 1px solid #374151;
+  flex-shrink: 0;
+}
+
+.pdf-modal-title-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pdf-modal-title {
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 45vw;
+}
+
+.pdf-modal-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pdf-modal-body {
+  flex: 1;
+  height: calc(100vh - 54px);
+  overflow-y: auto;
+  padding: 24px;
+}
+
+/* ==========================================================================
+   VUE 3 : PDF À TÉLÉCHARGER
+   ========================================================================== */
+.downloads-intro {
+  margin-bottom: 24px;
+}
+
+.downloads-intro h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-black);
+  margin-bottom: 6px;
+}
+
+.downloads-intro p {
+  font-size: 15px;
+  color: var(--color-gray-muted);
+}
+
+.downloads-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.download-cat-section {
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-border);
+  border-radius: var(--radius-md);
+  padding: 18px 20px;
+  box-shadow: var(--shadow-card);
+}
+
+.download-cat-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-black);
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-gray-border);
+  padding-bottom: 8px;
+}
+
+.download-pdf-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.download-pdf-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: var(--color-gray-light);
+  border: 1px solid var(--color-gray-border);
+  border-radius: var(--radius-sm);
+  gap: 14px;
+  flex-wrap: wrap;
+  transition: border-color 0.15s ease;
+}
+
+.download-pdf-row:hover {
+  border-color: var(--color-blue);
+}
+
+.download-pdf-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.download-pdf-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-black);
+}
+
+.download-pdf-size {
+  font-size: 12px;
+  color: var(--color-gray-muted);
+  font-weight: 500;
+}
+
+.download-pdf-actions {
+  display: flex;
+  gap: 8px;
+}
+
+/* ==========================================================================
+   VUE 4 : CLASSEMENT PERSONNALISÉ
+   ========================================================================== */
+.screen-classement {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.classement-header-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-border);
+  border-radius: var(--radius-md);
+  padding: 20px 24px;
+  box-shadow: var(--shadow-card);
+  margin-bottom: 20px;
+}
+
+.classement-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.classement-title-left h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-black);
+  margin-bottom: 4px;
+}
+
+.classement-subtitle {
+  font-size: 14px;
+  color: var(--color-gray-muted);
+}
+
+.classement-actions-top {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.classement-book-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-gray-border);
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.classement-meta-status {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.save-status-badge {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-blue);
+  background: var(--color-blue-soft);
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid #bfdbfe;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.classement-tree-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Sections du classement */
+.classement-sec-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-add-section-tech {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-blue);
+  background: var(--color-blue-soft);
+  border: 1px solid #bfdbfe;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-add-section-tech:hover {
+  background: var(--color-blue);
+  color: var(--color-white);
+}
+
+/* Cartes de techniques dans le classement */
+.classement-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-border);
+  border-radius: var(--radius-sm);
+  transition: background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+  user-select: none;
+}
+
+.classement-item:hover {
+  border-color: #cbd5e1;
+  box-shadow: var(--shadow-subtle);
+}
+
+.classement-item.dragging {
+  opacity: 0.4;
+  border: 1px dashed var(--color-blue);
+  background: var(--color-blue-soft);
+}
+
+.classement-item.drag-over {
+  border-top: 2px solid var(--color-blue);
+  background: #f8fafc;
+}
+
+.classement-drag-handle {
+  cursor: grab;
+  font-size: 16px;
+  color: var(--color-gray-muted);
+  padding: 4px;
+  line-height: 1;
+}
+
+.classement-drag-handle:active {
+  cursor: grabbing;
+}
+
+.classement-rank-badge {
+  min-width: 38px;
+  height: 28px;
+  border-radius: 6px;
+  background: var(--color-blue-soft);
+  color: var(--color-blue);
+  font-weight: 700;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #bfdbfe;
+  flex-shrink: 0;
+}
+
+.classement-tech-info {
+  flex: 1;
+  min-width: 0;
+  cursor: pointer;
+}
+
+.classement-tech-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-black);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.classement-tech-title:hover {
+  color: var(--color-blue);
+}
+
+.badge-custom {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--color-red);
+  background: var(--color-red-soft);
+  padding: 2px 7px;
+  border-radius: 4px;
+  border: 1px solid #fecaca;
+}
+
+.classement-tech-sub {
+  font-size: 12px;
+  color: var(--color-gray-muted);
+  margin-top: 2px;
+  display: flex;
+  gap: 8px;
+}
+
+.classement-tech-actions {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.btn-rank-move,
+.btn-rank-pos,
+.btn-rank-delete {
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-border);
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  color: var(--color-black);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-rank-move:hover {
+  background: var(--color-blue-soft);
+  color: var(--color-blue);
+  border-color: var(--color-blue);
+}
+
+.btn-rank-pos:hover {
+  background: var(--color-blue-soft);
+  color: var(--color-blue);
+  border-color: var(--color-blue);
+  font-weight: 700;
+}
+
+.btn-rank-delete:hover {
+  background: var(--color-red-soft);
+  color: var(--color-red);
+  border-color: var(--color-red);
+}
+
+/* ==========================================================================
+   MODALS MODERNES (AJOUT TECHNIQUE & EXPORT EXCEL)
+   ========================================================================== */
+.tech-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.tech-modal-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(17, 24, 39, 0.6);
+  backdrop-filter: blur(2px);
+}
+
+.tech-modal-box {
+  position: relative;
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  max-width: 620px;
+  width: 100%;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-modal);
+  overflow: hidden;
+  z-index: 101;
+  animation: modalScaleIn 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes modalScaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.tech-modal-header {
+  padding: 18px 24px;
+  border-bottom: 1px solid var(--color-gray-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tech-modal-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-black);
+}
+
+.tech-modal-form,
+.tech-modal-body-content {
+  padding: 20px 24px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.tech-modal-footer {
+  padding: 16px 24px;
+  border-top: 1px solid var(--color-gray-border);
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  background: var(--color-gray-light);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-black);
+}
+
+.form-control {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid var(--color-gray-border);
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  color: var(--color-black);
+  background: var(--color-white);
+  transition: border-color 0.15s ease;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--color-blue);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.form-row {
+  display: flex;
+  gap: 14px;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+/* Grille d'export Excel */
+.export-options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 600px) {
+  .export-options-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.export-opt-card {
+  background: var(--color-gray-light);
+  border: 1px solid var(--color-gray-border);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.export-opt-card h4 {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-black);
+  margin-bottom: 6px;
+}
+
+.export-opt-card p {
+  font-size: 13px;
+  color: var(--color-gray-muted);
+  line-height: 1.4;
+  flex: 1;
+}
+
+/* Toast de notification */
+.classement-toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: var(--color-black);
+  color: var(--color-white);
+  padding: 12px 20px;
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: var(--shadow-modal);
+  z-index: 1000;
+  animation: toastSlideUp 0.25s ease;
+}
+
+@keyframes toastSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==========================================================================
+   MULTI-SOURCES PDF (TECHNIQUES DISPONIBLES DANS PLUSIEURS LIVRES)
+   ========================================================================== */
+.badge-multi-sources {
+  background: rgba(37, 99, 235, 0.1) !important;
+  color: var(--color-blue) !important;
+  font-weight: 600 !important;
+  border: 1px solid rgba(37, 99, 235, 0.25) !important;
+}
+
+.detail-multi-sources-container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background: var(--color-gray-light);
+  border: 1px solid var(--color-gray-border);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.multi-sources-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.multi-sources-subtitle {
+  font-size: 13px;
+  color: var(--color-gray-muted);
+  font-weight: 500;
+}
+
+.multi-sources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 12px;
+}
+
+.multi-source-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-border);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.multi-source-card:hover {
+  border-color: var(--color-blue);
+  box-shadow: 0 2px 4px rgba(37, 99, 235, 0.08);
+}
+
+.multi-source-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.multi-source-book {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-black);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+}
+
+.multi-source-page {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--color-blue);
+  background: rgba(37, 99, 235, 0.08);
+  padding: 2px 8px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.multi-source-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.multi-source-actions .btn-open-specific-source {
+  flex: 1;
+  white-space: nowrap;
+  font-size: 12px;
+  padding: 6px 12px;
+}
+
+.source-item-line {
+  padding: 4px 0;
+  border-bottom: 1px dashed var(--color-gray-border);
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.source-item-line:last-child {
+  border-bottom: none;
+}
+
+
