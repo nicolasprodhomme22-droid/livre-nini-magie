@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Livre nini magie</title>
+  
+  <!-- Anti-cache strict pour garantir les mises à jour immédiates -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+
+  <!-- PWA & Métadonnées -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#2563EB">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="icon-192.png">
+
+  <!-- Police unique classique lisible (Inter) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Lecteur PDF universel PDF.js -->
+  <script src="vendor/pdf.min.js"></script>
+  <!-- Moteur Excel SheetJS pour export .xlsx direct -->
+  <script src="vendor/xlsx.full.min.js"></script>
+
+  <link rel="stylesheet" href="style.css?v=20260928_6">
+</head>
+<body>
+  <div class="app-root">
+    <!-- Barre supérieure épurée -->
+    <header class="app-header">
+      <div class="header-left">
+        <h1 class="app-title" id="app-home-link">Livre nini magie</h1>
+      </div>
+
+      <!-- Navigation par 4 onglets -->
+      <nav class="app-nav">
+        <button class="nav-tab active" id="tab-library" data-view="library">
+          <span class="nav-tab-label">Bibliothèque</span>
+        </button>
+        <button class="nav-tab" id="tab-sommaire" data-view="sommaire">
+          <span class="nav-tab-label">Sommaire</span>
+        </button>
+        <button class="nav-tab" id="tab-classement" data-view="classement">
+          <span class="nav-tab-label">Classement</span>
+        </button>
+        <button class="nav-tab" id="tab-downloads" data-view="downloads">
+          <span class="nav-tab-label">PDF à télécharger</span>
+        </button>
+      </nav>
+
+      <!-- Indicateur discret -->
+      <div class="header-right">
+        <span class="header-count" id="header-total-count">19 237 fiches</span>
+      </div>
+    </header>
+
+    <!-- Zone principale -->
+    <main class="app-main">
+      
+      <!-- ============================================== -->
+      <!-- VUE 1 : BIBLIOTHÈQUE                          -->
+      <!-- ============================================== -->
+      <section class="view-panel active" id="view-library">
+        <div class="screen screen-home" id="screen-home">
+          <div class="home-intro">
+            <h2>Bibliothèque</h2>
+            <p>Sélectionnez un univers pour explorer son sommaire officiel complet.</p>
+          </div>
+
+          <div class="home-books-grid">
+            <button class="book-card" data-book="cartes">
+              <span class="book-card-symbol">🃏</span>
+              <div class="book-card-content">
+                <h3 class="book-card-title">Techniques Cartes</h3>
+                <span class="book-card-count" id="home-count-cartes">3 542 techniques</span>
+              </div>
+              <span class="book-card-arrow">➔</span>
+            </button>
+
+            <button class="book-card" data-book="pieces">
+              <span class="book-card-symbol">🪙</span>
+              <div class="book-card-content">
+                <h3 class="book-card-title">Techniques Pièces</h3>
+                <span class="book-card-count" id="home-count-pieces">11 831 techniques</span>
+              </div>
+              <span class="book-card-arrow">➔</span>
+            </button>
+
+            <button class="book-card" data-book="tours">
+              <span class="book-card-symbol">🎩</span>
+              <div class="book-card-content">
+                <h3 class="book-card-title">Tours de Cartes</h3>
+                <span class="book-card-count" id="home-count-tours">3 746 routines</span>
+              </div>
+              <span class="book-card-arrow">➔</span>
+            </button>
+
+            <button class="book-card" data-book="tours_pieces">
+              <span class="book-card-symbol">💰</span>
+              <div class="book-card-content">
+                <h3 class="book-card-title">Tours de Pièces</h3>
+                <span class="book-card-count" id="home-count-tours_pieces">671 routines</span>
+              </div>
+              <span class="book-card-arrow">➔</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================== -->
+      <!-- VUE 2 : SOMMAIRE                              -->
+      <!-- ============================================== -->
+      <section class="view-panel" id="view-sommaire" style="display: none;">
+        
+        <!-- Écran de navigation dans le Sommaire -->
+        <div class="screen screen-sommaire-tree" id="screen-sommaire-tree">
+          <!-- Sélecteur de livre rapide -->
+          <div class="sommaire-book-bar">
+            <div class="book-selector-tabs">
+              <button class="btn-book-select active" data-book="cartes">🃏 Techniques Cartes (20 chapitres)</button>
+              <button class="btn-book-select" data-book="pieces">🪙 Techniques Pièces (24 chapitres)</button>
+              <button class="btn-book-select" data-book="tours">🎩 Tours de Cartes (5 chapitres)</button>
+              <button class="btn-book-select" data-book="tours_pieces">💰 Tours de Pièces (12 chapitres)</button>
+            </div>
+            <div class="tree-tools">
+              <button class="btn-tool" id="btn-toggle-expand">Tout déplier</button>
+            </div>
+          </div>
+
+          <!-- Barre de recherche épurée -->
+          <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Rechercher une technique, un mot clé, une passe..." autocomplete="off">
+            <span class="search-count-badge" id="search-count-badge" style="display: none;"></span>
+            <button class="btn-search-clear" id="btn-search-clear" style="display: none;">✕</button>
+          </div>
+
+          <!-- Arborescence accordéon épurée -->
+          <div class="tree-wrapper" id="tree-wrapper">
+            <div class="tree-loading">Chargement du sommaire officiel complet...</div>
+          </div>
+        </div>
+
+        <!-- Écran de la Fiche Technique Dédiée -->
+        <div class="screen screen-technique-detail" id="screen-technique-detail" style="display: none;">
+          <div class="detail-top-bar">
+            <button class="btn-back" id="btn-back-tree">
+              ← Retour au sommaire
+            </button>
+            <span class="detail-id" id="detail-id">TECH_CARTE_001</span>
+          </div>
+
+          <article class="detail-card">
+            <!-- Fil d'ariane épuré -->
+            <div class="detail-breadcrumb" id="detail-breadcrumb">
+              Partie 1 › Chapitre 1 › Section 1
+            </div>
+
+            <!-- Titre de la technique -->
+            <h2 class="detail-title" id="detail-title">Nom de la Technique</h2>
+
+            <!-- Boutons d'action : OUVRIR LE PDF À LA BONNE PAGE -->
+            <div class="detail-actions-bar">
+              <button type="button" class="btn btn-primary btn-lg" id="btn-open-pdf-page">
+                📖 Ouvrir le PDF à la page <span id="btn-open-page-num">...</span>
+              </button>
+              <a class="btn btn-outline" id="btn-open-pdf-tab" href="#" target="_blank" title="Ouvrir dans le lecteur PDF natif du navigateur">
+                ↗ Ouvrir dans un nouvel onglet
+              </a>
+              <a class="btn btn-outline" id="btn-download-pdf" href="#" download title="Télécharger le fichier complet">
+                📥 Télécharger le PDF original
+              </a>
+            </div>
+
+            <!-- Conteneur dynamique si plusieurs sources PDF disponibles -->
+            <div id="detail-multi-sources-container" class="detail-multi-sources-container" style="display: none;"></div>
+
+            <!-- Bloc Effet -->
+            <section class="detail-block block-effet">
+              <div class="detail-block-header">
+                <span class="badge badge-blue">EFFET</span>
+                <span class="detail-block-subtitle">Ce que voit le spectateur</span>
+              </div>
+              <div class="detail-block-text" id="detail-effet-text">
+                Description de l'effet...
+              </div>
+            </section>
+
+            <!-- Bloc Méthode -->
+            <section class="detail-block block-methode">
+              <div class="detail-block-header">
+                <span class="badge badge-red">MÉTHODE</span>
+                <span class="detail-block-subtitle">Le secret et la manipulation</span>
+              </div>
+              <div class="detail-block-text" id="detail-methode-text">
+                Description de la méthode...
+              </div>
+            </section>
+
+            <!-- Référence source -->
+            <div class="detail-source-row">
+              <span class="source-label">Source originale certifiée :</span>
+              <strong class="source-value" id="detail-source-value">Livre.pdf, p. 0</strong>
+            </div>
+          </article>
+        </div>
+
+      </section>
+
+      <!-- ============================================== -->
+      <!-- VUE 4 : CLASSEMENT PERSONNALISÉ                -->
+      <!-- ============================================== -->
+      <section class="view-panel" id="view-classement" style="display: none;">
+        <div class="screen screen-classement" id="screen-classement">
+          
+          <div class="classement-header-card">
+            <div class="classement-title-row">
+              <div class="classement-title-left">
+                <h2>Classement personnalisé</h2>
+                <p class="classement-subtitle">Organisez l'ordre de vos techniques par section, ajoutez vos propres techniques, et exportez sur Excel.</p>
+              </div>
+              <div class="classement-actions-top">
+                <button type="button" class="btn btn-outline" id="btn-classement-export-excel" title="Télécharger le fichier Excel de ce classement">
+                  📥 Exporter vers Excel (.xlsx)
+                </button>
+                <button type="button" class="btn btn-primary" id="btn-classement-add-tech">
+                  ➕ Ajouter une technique
+                </button>
+                <button type="button" class="btn btn-subtle" id="btn-classement-reset" title="Restaurer l'ordre par défaut du catalogue">
+                  🔄 Réinitialiser
+                </button>
+              </div>
+            </div>
+
+            <!-- Sélecteur des 3 livres -->
+            <div class="classement-book-bar">
+              <div class="book-selector-tabs" id="classement-book-selector">
+                <button class="btn-book-select active" data-book="cartes" id="btn-classement-book-cartes">🃏 Techniques Cartes</button>
+                <button class="btn-book-select" data-book="pieces" id="btn-classement-book-pieces">🪙 Techniques Pièces</button>
+                <button class="btn-book-select" data-book="tours" id="btn-classement-book-tours">🎩 Tours de Cartes</button>
+                <button class="btn-book-select" data-book="tours_pieces" id="btn-classement-book-tours_pieces">💰 Tours de Pièces</button>
+              </div>
+              <div class="classement-meta-status">
+                <span class="save-status-badge" id="classement-save-status">💾 Enregistré automatiquement</span>
+                <button class="btn-tool" id="btn-classement-toggle-expand">Tout déplier</button>
+              </div>
+            </div>
+
+            <!-- Barre de recherche dans le classement -->
+            <div class="search-bar" style="margin-top: 14px;">
+              <input type="text" id="classement-search-input" placeholder="Filtrer les techniques du classement..." autocomplete="off">
+              <span class="search-count-badge" id="classement-search-badge" style="display: none;"></span>
+              <button class="btn-search-clear" id="btn-classement-search-clear" style="display: none;">✕</button>
+            </div>
+          </div>
+
+          <!-- Arborescence du classement -->
+          <div class="classement-tree-wrapper" id="classement-tree-wrapper">
+            <div class="tree-loading">Chargement du classement officiel et personnalisé...</div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ============================================== -->
+      <!-- VUE 3 : PDF À TÉLÉCHARGER                     -->
+      <!-- ============================================== -->
+      <section class="view-panel" id="view-downloads" style="display: none;">
+        <div class="downloads-intro">
+          <h2>PDF à télécharger</h2>
+          <p>Les 19 livres et traités originaux certifiés OCR en téléchargement direct et lecture immédiate.</p>
+        </div>
+
+        <div class="downloads-categories" id="downloads-container">
+          <!-- Rempli dynamiquement -->
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ============================================== -->
+    <!-- LECTEUR PDF PLEIN ÉCRAN DÉDIÉ                  -->
+    <!-- ============================================== -->
+    <div class="pdf-modal" id="pdf-modal" style="display: none;">
+      <div class="pdf-modal-header">
+        <div class="pdf-modal-title-box">
+          <span class="badge badge-blue">LECTEUR PDF</span>
+          <span class="pdf-modal-title" id="pdf-modal-title">Document</span>
+        </div>
+        <div class="pdf-modal-controls">
+          <button type="button" class="btn-pdf-nav" id="btn-modal-prev" title="Page précédente (Flèche Gauche)">◀ Précédente</button>
+          <span class="modal-page-indicator">
+            Page <input type="number" id="modal-page-input" class="modal-page-input" min="1" value="1" title="Aller directement à une page (Taper le numéro et valider avec Entrée)"> / <span id="modal-total-pages">...</span>
+            <span id="modal-current-page" style="display: none;">1</span>
+          </span>
+          <button type="button" class="btn-pdf-nav" id="btn-modal-next" title="Page suivante (Flèche Droite)">Suivante ▶</button>
+          <button type="button" class="btn-pdf-nav" id="btn-modal-zoom-out" title="Dézoomer (−)">−</button>
+          <span id="modal-zoom-indicator" class="zoom-indicator">120%</span>
+          <button type="button" class="btn-pdf-nav" id="btn-modal-zoom-in" title="Zoomer (+)">+</button>
+          <a class="btn-pdf-nav" id="pdf-modal-external" href="#" target="_blank" title="Ouvrir dans un nouvel onglet avec défilement continu">↗ Onglet</a>
+          <button type="button" class="btn-pdf-nav btn-close-modal" id="btn-close-pdf-modal" title="Fermer le lecteur (Échap)">✕ Fermer</button>
+        </div>
+      </div>
+      <div class="pdf-modal-body" id="pdf-modal-body">
+        <div class="pdf-render-status" id="modal-render-status">Chargement de la page exacte du PDF...</div>
+        <canvas id="modal-pdf-canvas" class="pdf-canvas"></canvas>
+      </div>
+    </div>
+
+    <!-- ============================================== -->
+    <!-- MODAL AJOUT DE TECHNIQUE                       -->
+    <!-- ============================================== -->
+    <div class="tech-modal" id="modal-add-technique" style="display: none;">
+      <div class="tech-modal-backdrop" id="modal-add-tech-backdrop"></div>
+      <div class="tech-modal-box">
+        <div class="tech-modal-header">
+          <h3 class="tech-modal-title">➕ Ajouter une technique au classement</h3>
+          <button type="button" class="btn-close-modal" id="btn-close-add-modal">✕</button>
+        </div>
+        <form id="form-add-technique" class="tech-modal-form">
+          <div class="form-row">
+            <div class="form-group flex-1">
+              <label for="form-tech-book">Livre cible *</label>
+              <select id="form-tech-book" class="form-control" required>
+                <option value="cartes">🃏 Techniques Cartes</option>
+                <option value="pieces">🪙 Techniques Pièces</option>
+                <option value="tours">🎩 Tours de Cartes</option>
+                <option value="tours_pieces">💰 Tours de Pièces</option>
+              </select>
+            </div>
+            <div class="form-group flex-1">
+              <label for="form-tech-partie">Partie *</label>
+              <select id="form-tech-partie" class="form-control" required></select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group flex-1">
+              <label for="form-tech-chapitre">Chapitre *</label>
+              <select id="form-tech-chapitre" class="form-control" required></select>
+            </div>
+            <div class="form-group flex-1">
+              <label for="form-tech-section">Section *</label>
+              <select id="form-tech-section" class="form-control" required></select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="form-tech-name">Nom de la technique ou tour *</label>
+            <input type="text" id="form-tech-name" class="form-control" placeholder="ex: Saut de coupe classique, Tenue du tricheur..." required>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group flex-1">
+              <label for="form-tech-page">Numéro de page (optionnel)</label>
+              <input type="number" id="form-tech-page" class="form-control" placeholder="ex: 45" min="1">
+            </div>
+            <div class="form-group flex-1">
+              <label for="form-tech-source">Livre ou source PDF (optionnel)</label>
+              <input type="text" id="form-tech-source" class="form-control" placeholder="ex: Royal Road to Card Magic.pdf">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="form-tech-effet">Effet (ce que voit le public - optionnel)</label>
+            <textarea id="form-tech-effet" class="form-control" rows="2" placeholder="Description visuelle de l'effet..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="form-tech-methode">Méthode / Manipulation (optionnel)</label>
+            <textarea id="form-tech-methode" class="form-control" rows="2" placeholder="Explication de la manipulation secrète..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="form-tech-position">Position dans la section</label>
+            <select id="form-tech-position" class="form-control">
+              <option value="start">En premier (#1 au début)</option>
+              <option value="end" selected>En dernier (à la fin)</option>
+            </select>
+          </div>
+
+          <div class="tech-modal-footer">
+            <button type="button" class="btn btn-outline" id="btn-cancel-add-tech">Annuler</button>
+            <button type="submit" class="btn btn-primary">Enregistrer la technique</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- ============================================== -->
+    <!-- MODAL EXPORT EXCEL                            -->
+    <!-- ============================================== -->
+    <div class="tech-modal" id="modal-export-excel" style="display: none;">
+      <div class="tech-modal-backdrop" id="modal-export-backdrop"></div>
+      <div class="tech-modal-box">
+        <div class="tech-modal-header">
+          <h3 class="tech-modal-title">📥 Exporter le classement sur Excel</h3>
+          <button type="button" class="btn-close-modal" id="btn-close-export-modal">✕</button>
+        </div>
+        <div class="tech-modal-body-content">
+          <p style="margin-bottom: 16px; color: var(--color-black);">Choisissez le type d'export Excel (.xlsx) que vous souhaitez générer :</p>
+          <div class="export-options-grid">
+            <div class="export-opt-card">
+              <h4 id="export-modal-book-title">Livre actuellement affiché</h4>
+              <p>Génère un classeur Excel avec toutes les techniques dans votre ordre personnalisé, avec rang, partie, chapitre, section, description et sources.</p>
+              <button type="button" class="btn btn-primary" id="btn-confirm-export-current" style="margin-top: 12px; width: 100%;">
+                📥 Exporter ce livre (.xlsx)
+              </button>
+            </div>
+            <div class="export-opt-card">
+              <h4>Les 4 livres complets</h4>
+              <p>Génère un unique fichier Excel contenant 4 feuilles de calcul distinctes (Cartes, Pièces, Tours, Tours de Pièces) avec tous vos classements.</p>
+              <button type="button" class="btn btn-outline" id="btn-confirm-export-all" style="margin-top: 12px; width: 100%;">
+                📚 Exporter les 4 livres (4 onglets .xlsx)
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="tech-modal-footer">
+          <button type="button" class="btn btn-subtle" id="btn-cancel-export">Fermer</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="classement-toast" id="classement-toast" style="display: none;">
+      Notification
+    </div>
+
+  </div>
+
+  <script src="app.js?v=20260928_6"></script>
+</body>
+</html>
