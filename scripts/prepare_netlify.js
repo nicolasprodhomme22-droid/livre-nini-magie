@@ -44,4 +44,7 @@ const destSources = path.join(DIST, 'Sources', 'sources_lisibles');
 fs.mkdirSync(destSources, { recursive: true });
 copyRecursive(SOURCES_LISIBLES, destSources);
 
+// 5. Créer .nojekyll pour désactiver le traitement Jekyll sur GitHub Pages
+fs.writeFileSync(path.join(DIST, '.nojekyll'), '');
+
 console.log('✅ [Netlify Build] Déploiement dist/ prêt avec succès !');
